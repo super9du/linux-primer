@@ -9,8 +9,8 @@
 * [第六章：硬盘管理](part6-disk-management.md)
 * [第七章：网络管理](part7-network-management.md)
 * [第八章：软件管理](part8-software-management.md)
-* [第九章：进程与服务](part9-process-and-service.md)
-* 第十章：安全管理（未完成）
+* [第九章：进程管理](part9-process-management.md)
+* 第十章：系统服务与安全防护（未完成）
 * 第十一章：其他常用命令（未完成）
 * 第十二章：最佳实践（未完成）
 * [友情链接](link.md)
