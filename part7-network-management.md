@@ -2,11 +2,11 @@
 
 ### 查看和操纵网络接口
 
-本段内容提到的网络都是以太网[^以太网（Ethernet）：是一种计算机局域网技术]。其中所提到的网络接口、IP 地址都是由网络中的 DHCP 服务器提供的。
+本段内容提到的网络都是以太网[^以太网]。其中所提到的网络接口、IP 地址都是由网络中的 DHCP 服务器提供的。
 
-`ifconfig` 网络接口命令（Interface Configuration）
+#### `ifconfig` 命令
 
-可用于查看和操纵（启动、关闭、修改）网络接口。查看所有用户可用，操纵根用户可用。
+if（interface，接口）。`ifconfig` 可用于查看和操纵（启动、关闭、修改）网络接口。查看所有用户可用，操纵根用户可用。
 
 **「查看用法」**
 
@@ -14,7 +14,7 @@
 
 `ifconfig -a` 查看所有网络接口的详细信息。无论是否被启用。
 
- `ifconfig <网络接口名>` 查看指定网络接口的详细信息。
+`ifconfig <网络接口名>` 查看指定网络接口的详细信息。
 
 **「开启/关闭用法」**
 
@@ -22,9 +22,9 @@
 
 **「修改用法」**
 
-`ifconfig <网络接口名> ip地址 netmask 255.255.255.0` 修改IP地址
+`ifconfig <网络接口名> ip地址 netmask 255.255.255.0` 修改IP地址。
 
-`ifconfig <网络接口名> mtu mut值` 修改MTU值
+`ifconfig <网络接口名> mtu mut值` 修改MTU值。
 
 同理可以修改更多
 
@@ -95,6 +95,20 @@ virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 cd etc/sysconfig/network-scripts
 ```
 
+### `ip` 命令
+
+`ip a` 与 `ifconfig` 效果大致相同。列出网络接口详情
+
+`ip r` 列出路由表
+
+### `wget` 命令
+
+`wget` 用于从网络上的指定链接下载指定内容。w 可能是 web （网络）的首字母缩写。
+
+```bash
+wget <url> #下载文件到当前目录下
+```
+
 ### `curl` 命令
 
 > 参考链接：[curl命令详解](https://blog.csdn.net/binglong_world/article/details/80755193)
@@ -129,3 +143,5 @@ curl <选项> <参数>
 ```
 
 
+
+[^以太网]: 英文 Ethernet，是一种计算机局域网技术

@@ -1,10 +1,10 @@
 ## 一）开始
 
-### 专业名词
+### 名词解释
 
 - **大小写敏感**: 即区分大小写。Linux 中的命令和脚本是区分大小写的，文件的名称也是区分大小写的。
-- **bash**: 批处理命令/命令行，是  linux 的外壳程序。bash 对大小写敏感。
-- **shell**: 原意贝壳，这里指命令行脚本/脚本语言/bash的执行语言。
+- **shell**: 原意壳，包裹在操作系统内核之外，是一种用于解释执行 `shell` 脚本的工具。Linux 中的 shell 有很多种，比如 sh（Bourne shell）、bash（Bourne Again shell）、dash（Debian Almquist shell）、zsh 等。shell 命令对大小写敏感。
+- **bash**: Linux 默认的 shell，在 Linux 上 sh 一般是 bash 的软连接。但 ubuntu 等 debain 系列的 Linux 上，sh 默认指向 dash。
 - **路径**: 由多级目录组成且中间使用斜杠连接的一串字符串。Windows 中开头必须是`盘符:\`，结尾必须是最后一级目录或文件名（Windows中除可执行文件，均需加扩展名）。如 Windows 中 cmd 的路径为： `C:\windows\system32\cmd.exe`。
 - **绝对路径**: 如 `/tmp/level1`, `/home`  这种从根目录一直列的路径称之为绝对路径（`home` 是根目录下的文件夹）。
 - **相对路径**: 如 `level/level2`  `level1`  `test` 这种从当前目录列的路径称之为绝对路径。

@@ -18,13 +18,13 @@
 | 标准输出流     | stdout | 显示来自命令的输出     | 1          |
 | 标准错误输出流 | stderr | 显示来自命令的错误输出 | 2          |
 
-> 注：默认情况标准输出和标准错误输出都是再屏幕上输出。标准输入是在屏幕上输入。
+> 注：默认情况标准输出和标准错误输出都是在屏幕上输出。标准输入是在屏幕上输入。
 
 **Linux 从输入到输出的过程**
 
 ```
-键盘录入》执行命令》是否正确执行》正确》标准输出流（stdout）
-							错误》标准错误输出流（stderr）
+键盘录入->执行命令->是否正确执行─┬─>正确->标准输出流		（stdout）
+						    └─>错误->标准错误输出流	（stderr）
 ```
 
 ![1548835650522](part3-redirection-and-pipe.assets/1548835650522.png)
@@ -39,10 +39,10 @@
 
 **`n>`** ，重定向覆盖。表示将来自文件描述符 n 的输出重定向到文件，如果它存在，将覆盖原有文件内容；如果文件不存在，就创建它。必须对这个文件有写权限。
 
-示例：
+示例：输出 `ls -l ~/test` 的结果到 `~/stdout.txt` 文件
 
 ```bash
-ls -l ~/test 1>~/stdout.txt
+ls -l ~/test 1>~/stdout.txt     # 或 ls -l ~/test >~/stdout.txt
 ls ~/test
 cat ~/stdout.txt
 ```
@@ -51,16 +51,11 @@ cat ~/stdout.txt
 
 该段代码表示将 `ls -l ~/test` 中列出的文件名，使用文件描述符为 1 的输出（即标准输出流），输出到家文件目录的 stdout.txt 文件。
 
-注：
-
-* [cat](#查看文本文件) 为查看文本操作
-* `n>` 或 `n>>` 中的 n 是指 `文件描述符`。如果忽略，就假设是标准输出。将 n 改为 2 则指标准错误输出
-
 2° `n>>`
 
 **`n>>`**，重定向追加。表示将来自文件描述符 n 的输出重定向到文件，如果它存在，输出就附加到现有文件后面；如果文件不存在，就创建它。 必须对这个文件有写权限。
 
-示例：
+示例：追加 `ls -l ~/test` 的结果到 `~/stdout.txt` 文件
 
 ```bash
 ls -l ~/test2 1>>~/stdout.txt
@@ -72,6 +67,11 @@ cat ~/stdout.txt
 
 将 `~/test2` 中列出的文件名通过标准输出流输出到家目录下的 stdout.txt 文件末尾，并保留之前的内容。
 
+| 注意                                                         |
+| ------------------------------------------------------------ |
+| [cat](part2-file-management.md#查看文本文件) 为查看文本操作  |
+| `n>` 或 `n>>` 中的 n 是指 `文件描述符`。如果 n 省略不写，就代表 1，「标准输出」。将 n 改为 2 则指「标准错误输出」 |
+
 **同时进行重定向**
 
 ```bash
@@ -80,7 +80,7 @@ ls -l ~/test ~/test2 1>~/stdout.txt 2>~/stderr.txt
 
 ##### 将标准输出和标准错误重定向到同一个文件中 
 
-自动化脚本或后台作业常常采用这种做法，这样就能够在以后查看输出。
+自动化脚本或后台作业常常采用这种做法，这样就能够在以后在文件中查看输出。
 
 1°  `&>` 或 `&>>` 
 
@@ -94,7 +94,13 @@ ls -l ~/test ~/test2 &>std.txt
 
 2°  `m>&n` 或 `m>>&n` 
 
-对文件描述符 n 进行重定向，然后使用 `m>&n` 或 `m>>&n` 将文件描述符 m 重定向到同一个位置。
+将文件描述符 m 重定向至 n。
+
+示例：将 `ls` 的标准输出重定向到 test.txt 中，将标准错误输出重定向到标准输出中
+
+```bash
+ls -l ~/test > test.txt 2>&1 # 等同于 ls -l ~/test &>test.txt
+```
 
 **忽略标准输出或标准错误 `/dev/null`**
 
@@ -103,27 +109,6 @@ echo 1 apple\n2 pear\n3 banana > ~/test/fruit.txt 2>/dev/null
 ```
 
 写入到  `/dev/null` 的内容都将被丢弃。
-
-实例：挂起 `logstash` ，并重定向到标准输出和标准错误到 `/dev/null`
-
-```bash
-nohup ../bin/logstash -f cntd.conf > /dev/null 2>/dev/null &
-```
-
-**请回答以下问题的异同**
-
-```
-command
-command > /dev/null
-command > /dev/null 2>&1
-command &
-command > /dev/null &
-command > /dev/null 2>&1 &
-command &> /dev/null
-nohup command &> /dev/null
-```
-
-[点此查看](https://blog.csdn.net/liupeifeng3514/article/details/79711694)参考讲解。看到《**`command>a 2>a` 与 `command>a 2>&1`的区别**》即可。
 
 #### 输入重定向
 
