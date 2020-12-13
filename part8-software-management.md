@@ -132,7 +132,7 @@ S.5....T.  c /etc/dnf/vars/infra
 
 > `rpm -Va` 可以帮我们验证系统上有没有数据被改动，如果二进制程序有被改动过，那么这个机器很有可能被入侵了。
 
-### 使用 `yum` 管理软件（TODO）
+### 使用 `yum` 管理软件
 
 yum 全称 yellowdog updater modified （经我直译为：修改版黄狗更新器）。另外，yum 需要根用户权限。
 
@@ -169,11 +169,13 @@ yum -y install <软件名>  #表示安装时所有提示默认yes
 
 #### 查询软件状态
 
+如果软件已安装，最后一列会被 `@` 标记，否则未安装
+
 ```
 yum list <软件名>
 ```
 
-yum 支持通配符。例：查找以 soft 开头的软件，所以也许可以这么写
+yum 支持通配符。查找以 soft 开头的软件，可以这么写：
 
 ```
 yum list soft*
@@ -213,7 +215,8 @@ yum remove <软件名>
 
 ### 参考资料
 
-- [中国大学慕课-Linux系统管理](https://www.icourse163.org/course/NBCC-437004?tid=1002729007) 视频教程
-- 《鸟哥的Linux私房菜》第22章
-- https://man.linuxde.net/rpm
-- `rpm --help` 和 `yum --help`
+1. [中国大学慕课-Linux系统管理](https://www.icourse163.org/course/NBCC-437004?tid=1002729007) 视频教程
+2. 《鸟哥的Linux私房菜》第22章
+3. https://man.linuxde.net/rpm
+4. `rpm --help` 和 `yum --help`
+

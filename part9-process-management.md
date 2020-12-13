@@ -2,28 +2,26 @@
 
 ### 名词解释
 
-**程序（Program）**：可运行的二进制文件。
+- **程序（Program）**：可运行的二进制文件。
 
-**进程（Process）**：正在运行的程序。
+- **进程（Process）**：正在运行的程序。
 
-**服务**：也叫**守护进程（daemon）**，常驻在内存的进程。大多数守护进程名以字母 `d` 结尾，比如 `crond`、`sshd` 等。
+- **控制终端（Controll Terminal）**：Linux 有 7 个终端界面（tty，六个命令行界面，一个图形界面），分别可以使用 `Alt`+`F1`/.../`F7` 切换，其中一个界面卡死，不影响打开其他几个。
 
-**控制终端（Controll Terminal）**：Linux 有 7 个终端界面（tty，六个命令行界面，一个图形界面），分别可以使用 `Alt`+`F1`/.../`F7` 切换，其中一个界面卡死，不影响打开其他几个。
+- **会话（Session）**：我们每新开一个命令行对话框，其实打开的不是一个真正的终端，而是一个会话。每个会话会关联一个终端。使用 `ps` 可以查看当前会话所属的终端。如下代码块所示，`TTY` 就代表所属的终端。
 
-**会话（Session）**：我们每新开一个命令行对话框，其实打开的不是一个真正的终端，而是一个会话。每个会话会关联一个终端。使用 `ps` 可以查看当前会话所属的终端。如下代码块所示，`TTY` 就代表所属的终端。
+- **任务（job）**：每个会话都会有一个前台任务，多个后台任务。如果会话所属的终端不是 `tty`，那么在会话关闭的时候，所有的 job 都会接收到 `SIGHUP` 信号，导致进程终止。
 
-**任务（job）**：每个会话都会有一个前台任务，多个后台任务。如果会话所属的终端不是 `tty`，那么在会话关闭的时候，所有的 job 都会接收到 `SIGHUP` 信号，导致进程终止。
+- ```sh
+  > ps
+  PID TTY          TIME CMD
+  241 pts/2    00:00:00 bash
+  349 pts/2    00:00:00 ps
+  ```
 
-```sh
-> ps
-PID TTY          TIME CMD
-241 pts/2    00:00:00 bash
-349 pts/2    00:00:00 ps
-```
+- **前台（Foreground）**：会话任务的命令行界面。前台任务执行时不能做其他操作，需要等待命令执行完毕，但可以通过信号对任务做一些操作，比如：可以通过 `Ctrl`+`c` 中断该任务，通过 `Ctrl`+`z` 暂停该任务。
 
-**前台（Foreground）**：会话任务的命令行界面。前台任务执行时不能做其他操作，需要等待命令执行完毕，但可以通过信号对任务做一些操作，比如：可以通过 `Ctrl`+`c` 中断该任务，通过 `Ctrl`+`z` 暂停该任务。
-
-**后台（Background）**：后台任务允许该会话执行其他命令，可以通过在命令最后加上空格与`&` 符号，使任务进入后台。
+- **后台（Background）**：后台任务允许该会话执行其他命令，可以通过在命令最后加上空格与`&` 符号，使任务进入后台。
 
 ### 任务管理
 
@@ -291,13 +289,52 @@ PPID   PID  PGID   SID TTY      TPGID STAT   UID   TIME COMMAND
 * RES：进程内存占用，单位kb（按字母 e 切换单位大小）
 * S：进程状态
 
-#### `htop` 命令
+#### 其他命令
 
-给人看的 `top` 命令
+* `htop`：给人看的 `top` 命令
+* `fuser`：通过文件找到正在使用该文件的进程（file's user，文件的使用者）
+* `lsof`：列出被进程所使用的文件名（`ls` 列出文件，`lsof` 列出进程的文件）
+* `pidof`：找出正在执行的进程的 PID
+
+### `/proc` 目录
+
+proc 即 process（进程）的缩写。在 Unix 中有一个设计哲学叫做：「一切皆文件」。磁盘我们可以挂载在文件目录下，光驱、U盘、鼠标、键盘等都可以挂载在目录下，他们都可以抽象为一个文件进行描述。这样我们对磁盘、光驱、U盘等设备的读写都可以通过这个文件进行操作。Linux 亦如此。内存中的进程信息也会被映射为文件。`/proc` 目录下就是进程信息的映射。
+
+如果一个进程启动了，假设他的 PID 为 1，那么他在 `/proc` 目录下的位置就是 `/proc/1`。如果我们使用 `ls -l /proc/1`，会发现下面有很多文件。比如：
+
+```
+dr-xr-xr-x  2 super9du super9du 0 Dec  9 22:31 attr
+-r--------  1 super9du super9du 0 Dec  9 22:31 auxv
+-r--r--r--  1 super9du super9du 0 Dec  9 22:31 cgroup
+--w-------  1 super9du super9du 0 Dec  9 22:31 clear_refs
+-r--r--r--  1 super9du super9du 0 Dec  9 22:17 cmdline
+-rw-r--r--  1 super9du super9du 0 Dec  9 22:31 comm
+-rw-r--r--  1 super9du super9du 0 Dec  9 22:31 coredump_filter
+-r--r--r--  1 super9du super9du 0 Dec  9 22:31 cpuset
+lrwxrwxrwx  1 super9du super9du 0 Dec  9 22:31 cwd -> /home/super9du
+-r--------  1 super9du super9du 0 Dec  9 22:31 environ
+lrwxrwxrwx  1 super9du super9du 0 Dec  9 22:31 exe -> /usr/bin/bash
+···（省略）···
+```
+
+ 其中
+
+* cmdline 是进程被启动的命令（执行 `cat /proc/1/cmdline` 试试）
+* cwd 是命令的工作目录（cwd 即 cmd work directory）
+* environ 是这个进程的环境变量内容
+
+在 `/proc` 目录下文件还可以获取到系统相关的信息，简单列出一些对照关系（如有兴趣自行搜索或去「《鸟哥的Linux私房菜》第16章」查找）：
+
+| 文件名        | 文件内容                                  |
+| ------------- | ----------------------------------------- |
+| /proc/cmdline | 加载内核时执行的相关命令与参数            |
+| /proc/cpuinfo | 本机 CPU 的相关信息（频率、类型、功能等） |
+| /proc/meminfo | 内存信息，即 `free` 命令的内容            |
+| /proc/version | 内核版本信息，即 `uname -a` 显示的内容    |
 
 ### 参考
 
-* 《鸟哥的Linux私房菜》第16章
-* [中国大学慕课-Linux系统管理](https://www.icourse163.org/course/NBCC-437004?tid=1002729007) 视频教程
-* [Linux命令大全](https://man.linuxde.net/)网站——top 命令
+1. 《鸟哥的Linux私房菜》第16章
+2. [中国大学慕课-Linux系统管理](https://www.icourse163.org/course/NBCC-437004?tid=1002729007) 视频教程
+3. [Linux命令大全](https://man.linuxde.net/)网站——top 命令
 
