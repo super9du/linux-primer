@@ -4,7 +4,7 @@
 
 <a href="https://curl.qcloud.com/iTI9549b">![image-20201213232918801](README.assets/image-20201213232918801.png)</a>
 
-# 介绍
+# 《Linux 不入门到入门》介绍
 
 <table>
     <tr>
@@ -12,6 +12,7 @@
         <td>本书内容可能存在错误、疏漏或过时，请大家注意甄别</td>
     </tr>
 </table>
+
 ## 关于本书
 
 > 本书的精华几乎全都在本页了，所以一定要好好看！
@@ -42,9 +43,9 @@ Linux 书籍推荐
 
 Linux 网站推荐
 
-* [Linux中国—— tl;dr](https://tldr.linux.cn/cmd/chown)，一款「Linux 命令速查工具」，内容由志愿者翻译自权威网站。另外，Linux中国有一款名为 Linux 的小程序，可以查到更多命令
-* [Linux命令大全](https://man.linuxde.net/)，命令速查工具，错误挺多的，格式也不统一，应该是站长自己的笔记
-* [鸟哥的 Linux 私房菜](http://linux.vbird.org/) 鸟哥自己做的网站，上述《鸟哥的Linux私房菜》最早其实就成型于本站，该书也可以在本站上免费阅读
+* [Linux中国—— tl;dr](https://tldr.linux.cn/cmd/chown)，一款「Linux 命令速查工具」，内容由志愿者翻译自权威网站。另外，「Linux中国」有一款名为「Linux」的小程序，可以查到更多命令
+* [Linux命令大全](https://man.linuxde.net/)，命令速查工具，有一些错误和疏漏，内容格式略有不一，需要注意甄别
+* [鸟哥的 Linux 私房菜](http://linux.vbird.org/) 鸟哥自己做的网站，上述《鸟哥的Linux私房菜》最早其实就成型于此站，该书也可以在此站上免费阅读
 
 ## 关于学习的建议
 
