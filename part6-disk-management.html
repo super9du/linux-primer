@@ -1,0 +1,856 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第六章：硬盘管理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part7-network-management.html" />
+    
+    
+    <link rel="prev" href="part5-user-management.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Linux 不入门到入门 · 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="part1-start.html">
+            
+                <a href="part1-start.html">
+            
+                    
+                    第一章：开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="part2-file-management.html">
+            
+                <a href="part2-file-management.html">
+            
+                    
+                    第二章：文件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="part3-redirection-and-pipe.html">
+            
+                <a href="part3-redirection-and-pipe.html">
+            
+                    
+                    第三章：重定向与管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="part4-vim-editor.html">
+            
+                <a href="part4-vim-editor.html">
+            
+                    
+                    第四章：vim 文本编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="part5-user-management.html">
+            
+                <a href="part5-user-management.html">
+            
+                    
+                    第五章：用户管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6" data-path="part6-disk-management.html">
+            
+                <a href="part6-disk-management.html">
+            
+                    
+                    第六章：硬盘管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="part7-network-management.html">
+            
+                <a href="part7-network-management.html">
+            
+                    
+                    第七章：网络管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="part8-software-management.html">
+            
+                <a href="part8-software-management.html">
+            
+                    
+                    第八章：软件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="part9-process-management.html">
+            
+                <a href="part9-process-management.html">
+            
+                    
+                    第九章：进程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="part10-resource-management.html">
+            
+                <a href="part10-resource-management.html">
+            
+                    
+                    第十章：资源管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="part11-daemon-and-security.html">
+            
+                <a href="part11-daemon-and-security.html">
+            
+                    
+                    第十一章：服务与安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="part12-remote.html">
+            
+                <a href="part12-remote.html">
+            
+                    
+                    第十二章：远程维护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="terms.html">
+            
+                <a href="terms.html">
+            
+                    
+                    附录：名词参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="link.html">
+            
+                <a href="link.html">
+            
+                    
+                    友情链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第六章：硬盘管理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x516D;&#xFF09;&#x786C;&#x76D8;&#x7BA1;&#x7406;">&#x516D;&#xFF09;&#x786C;&#x76D8;&#x7BA1;&#x7406;</h2>
+<h3 id="&#x786C;&#x76D8;&#x3001;&#x5206;&#x533A;&#x7684;&#x547D;&#x540D;&#x53CA;&#x67E5;&#x770B;">&#x786C;&#x76D8;&#x3001;&#x5206;&#x533A;&#x7684;&#x547D;&#x540D;&#x53CA;&#x67E5;&#x770B;</h3>
+<h4 id="linux-&#x4E2D;&#x786C;&#x76D8;&#x547D;&#x540D;&#x53CA;&#x89C4;&#x5219;">Linux &#x4E2D;&#x786C;&#x76D8;&#x547D;&#x540D;&#x53CA;&#x89C4;&#x5219;</h4>
+<blockquote>
+<p>linux &#x4E2D;&#x6240;&#x6709;&#x7684;&#x8BBE;&#x5907;&#x90FD;&#x662F;&#x4EE5;&#x6587;&#x4EF6;&#x5F62;&#x5F0F;&#x51FA;&#x73B0;&#xFF0C;&#x786C;&#x76D8;&#x4EA6;&#x5982;&#x6B64;&#x3002;</p>
+</blockquote>
+<p><strong>&#x300C;&#x547D;&#x540D;&#x300D;</strong></p>
+<p>&#x786C;&#x76D8;&#x8BBE;&#x5907;&#x6587;&#x4EF6;&#x540D;&#x7684;&#x683C;&#x5F0F;&#x4E00;&#x822C;&#x4E3A; <code>/dev/xxy</code> &#x3002;</p>
+<p><strong>&#x300C;&#x89C4;&#x5219;&#x300D;</strong></p>
+<p><code>/dev</code> &#x76EE;&#x5F55;&#x4E2D;&#x5B58;&#x653E;&#x7684;&#x90FD;&#x662F;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x8BBE;&#x5907;&#x6587;&#x4EF6;&#x3002;</p>
+<p><code>/xxy</code> &#x4E2D;</p>
+<ul>
+<li><code>xx</code> &#x8868;&#x793A;&#x786C;&#x76D8;&#x7684;&#x7C7B;&#x578B;&#x3002;<code>xx</code> &#x53EF;&#x80FD;&#x7684;&#x503C;&#x4E3A;&#xFF1A;<ul>
+<li><code>sd</code> &#xFF0C;&#x8868;&#x660E;&#x8FD9;&#x662F;&#x91C7;&#x7528; SCSI&#x3001;SATA&#x3001;USB &#x63A5;&#x53E3;&#x7684;&#x786C;&#x76D8;&#x3002;</li>
+<li><code>hd</code> &#xFF0C;&#x8868;&#x660E;&#x8FD9;&#x662F;&#x91C7;&#x7528; IDE &#x63A5;&#x53E3;&#x7684;&#x786C;&#x76D8;&#x3002;&#xFF08;&#x5C11;&#x89C1;&#xFF09;</li>
+</ul>
+</li>
+<li><code>y</code> &#x8868;&#x793A;&#x4F7F;&#x7528;&#x6B64;&#x7C7B;&#x63A5;&#x53E3;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;&#x786C;&#x76D8;&#x3002;&#x53EF;&#x80FD;&#x4E3A; <code>a-z</code> &#x95F4;&#x7684;&#x82F1;&#x6587;&#x5B57;&#x7B26;&#x3002;</li>
+</ul>
+<p><strong>&#x300C;&#x793A;&#x4F8B;&#x300D;</strong></p>
+<ul>
+<li><code>/dev/sdb</code> &#x8868;&#x793A;&#x7CFB;&#x7EDF;&#x4E2D;&#x7B2C;&#x4E8C;&#x4E2A;&#x4F7F;&#x7528; <code>sb</code> &#x7C7B;&#x578B;&#x7684;&#x786C;&#x76D8;&#x3002;</li>
+<li><code>/dev/hdd</code> &#x8868;&#x793A;&#x7CFB;&#x7EDF;&#x4E2D;&#x7B2C;&#x56DB;&#x4E2A;&#x4F7F;&#x7528; <code>hd</code> &#x7C7B;&#x578B;&#x7684;&#x786C;&#x76D8;&#x3002;</li>
+</ul>
+<h4 id="linux-&#x4E2D;&#x786C;&#x76D8;&#x5206;&#x533A;&#x7684;&#x547D;&#x540D;&#x53CA;&#x89C4;&#x5219;">Linux &#x4E2D;&#x786C;&#x76D8;&#x5206;&#x533A;&#x7684;&#x547D;&#x540D;&#x53CA;&#x89C4;&#x5219;</h4>
+<p><strong>&#x300C;&#x6982;&#x5FF5;&#x300D;</strong></p>
+<blockquote>
+<p>&#x501F;&#x9274;&#x81EA;&#xFF1A;<a href="https://www.cnblogs.com/alexyuyu/articles/3454907.html" target="_blank">https://www.cnblogs.com/alexyuyu/articles/3454907.html</a></p>
+</blockquote>
+<p>&#x786C;&#x76D8;&#x5206;&#x533A;&#x6709;&#x4E09;&#x79CD;&#xFF1A;&#x4E3B;&#x78C1;&#x76D8;&#x5206;&#x533A;&#x3001;&#x6269;&#x5C55;&#x78C1;&#x76D8;&#x5206;&#x533A;&#x3001;&#x903B;&#x8F91;&#x5206;&#x533A;&#x3002;</p>
+<p>&#x5173;&#x4E8E;&#x5206;&#x533A;&#xFF0C;&#x4E00;&#x4E2A;&#x786C;&#x76D8;&#x4E2D;&#xFF1A;</p>
+<ul>
+<li>&#x4E3B;&#x5206;&#x533A;&#x81F3;&#x5C11;&#x6709;1&#x4E2A;&#xFF0C;&#x6700;&#x591A;4&#x4E2A;</li>
+<li>&#x6269;&#x5C55;&#x5206;&#x533A;&#x53EF;&#x4EE5;&#x6CA1;&#x6709;&#xFF0C;&#x6700;&#x591A;1&#x4E2A;</li>
+<li>&#x4E3B;&#x5206;&#x533A;+&#x6269;&#x5C55;&#x5206;&#x533A;&#x4E0D;&#x8D85;&#x8FC7;4&#x4E2A;</li>
+<li>&#x903B;&#x8F91;&#x5206;&#x533A;&#x4ECE;&#x5C5E;&#x4E8E;&#x6269;&#x5C55;&#x5206;&#x533A;&#xFF0C;&#x53EF;&#x4EE5;&#x6709;&#x82E5;&#x5E72;&#x4E2A;</li>
+<li>1-4 &#x53F7;&#x5206;&#x533A;&#x662F;&#x4FDD;&#x7559;&#x7ED9;&#x4E3B;&#x3001;&#x6269;&#x5C55;&#x5206;&#x533A;&#x7684;&#xFF0C;&#x903B;&#x8F91;&#x5206;&#x533A;&#x4E00;&#x5B9A;&#x7531; 5 &#x53F7;&#x5F00;&#x59CB;&#x3002;</li>
+</ul>
+<p>&#x7406;&#x89E3;&#x4E0E;&#x89E3;&#x91CA;&#xFF1A;</p>
+<p>&#x4E00;&#x4E2A;&#x786C;&#x76D8;&#x4E2D;&#x53EF;&#x4EE5;&#x6709; 1-4 &#x4E2A;&#x4E3B;&#x5206;&#x533A;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#x6269;&#x5C55;&#x5206;&#x533A;&#xFF0C;&#x5219;&#x6700;&#x591A;&#x53EF;&#x4EE5;&#x6709; 3 &#x4E2A;&#x4E3B;&#x5206;&#x533A;&#xFF08;&#x4E3B;&#x3001;&#x6269;&#x5206;&#x533A;&#x636E;&#x8BF4;&#x662F;&#x53D7; MBR &#x7EA6;&#x675F;&#xFF09;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x66F4;&#x591A;&#x5206;&#x533A;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x6269;&#x5C55;&#x5206;&#x533A;&#x8868;&#xFF08;EBR&#xFF09;&#x5C06;&#x6269;&#x5C55;&#x5206;&#x533A;&#x5206;&#x4E3A;&#x82E5;&#x5E72;&#x903B;&#x8F91;&#x5206;&#x533A;&#xFF0C;&#x4E14;&#x4ECD;&#x53EF;&#x5269;&#x4F59;&#x672A;&#x5206;&#x914D;&#x7A7A;&#x95F4;&#x3002;</p>
+<p><img src="part6-disk-management.assets/1549077392783.png" alt="1549077392783"></p>
+<p>&#x786C;&#x76D8;&#x5BB9;&#x91CF;&#x4E0E;&#x5206;&#x533A;&#x5173;&#x7CFB;&#xFF1A;</p>
+<ul>
+<li>&#x786C;&#x76D8;&#x5BB9;&#x91CF; = &#x4E3B;&#x5206;&#x533A;&#x603B;&#x5BB9;&#x91CF; + &#x6269;&#x5C55;&#x5206;&#x533A;&#x603B;&#x5BB9;&#x91CF;&#xFF08;&#x6CA1;&#x6709;&#x5219;&#x5FFD;&#x7565;&#xFF09;</li>
+<li>&#x6269;&#x5C55;&#x5206;&#x533A; = &#x903B;&#x8F91;&#x5206;&#x533A;&#x603B;&#x5BB9;&#x91CF; + &#x672A;&#x5206;&#x533A;&#x5BB9;&#x91CF;&#xFF08;&#x6CA1;&#x6709;&#x5219;&#x5FFD;&#x7565;&#xFF09;</li>
+</ul>
+<p><strong>&#x300C;&#x6CE8;&#x610F;&#x300D;</strong></p>
+<p>&#x4E0A;&#x8FF0;&#x5206;&#x533A;&#x65B9;&#x5F0F;&#x5E94;&#x4E3A; MBR &#x7684;&#x5206;&#x533A;&#x65B9;&#x5F0F;&#xFF0C;GTP &#x65B9;&#x5F0F;&#x53EF;&#x76F4;&#x63A5;&#x5C06;&#x786C;&#x76D8;&#x5206;&#x4E3A; 1-128 &#x4E2A;&#x4E3B;&#x5206;&#x533A;&#x3002;&#x5206;&#x533A;&#x65B9;&#x5F0F;&#x4E0D;&#x540C;&#xFF0C;&#x5206;&#x533A;&#x64CD;&#x4F5C;&#x4E5F;&#x6709;&#x4E0D;&#x540C;&#x3002;</p>
+<p><strong>&#x300C;&#x547D;&#x540D;&#x300D;</strong></p>
+<p>&#x786C;&#x76D8;&#x4E0A;&#x5206;&#x533A;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x683C;&#x5F0F;&#x4E00;&#x822C;&#x4E3A; <code>/dev/xxynpn</code> &#x3002;</p>
+<p><strong>&#x300C;&#x89C4;&#x5219;&#x300D;</strong></p>
+<p>&#x5176;&#x4E2D; <code>/xxyn</code> &#x4E2D;&#xFF0C;<code>n</code> &#x8868;&#x793A;&#x6269;&#x5C55;&#x5206;&#x533A;&#x3002;</p>
+<p><strong>&#x300C;&#x5206;&#x533A;&#x5212;&#x5206;&#x65B9;&#x5F0F;&#x300D;</strong></p>
+<ul>
+<li>&#x4E3B;&#x5206;&#x533A;/&#x6269;&#x5C55;&#x5206;&#x533A;&#x4F7F;&#x7528;&#x6570;&#x5B57; 1-4 &#x8868;&#x793A;</li>
+<li>&#x903B;&#x8F91;&#x5206;&#x533A;&#x4F7F;&#x7528; &gt;=5 &#x7684;&#x6570;&#x5B57;&#x8868;&#x793A;</li>
+</ul>
+<p><strong>&#x300C;&#x793A;&#x4F8B;&#x300D;</strong></p>
+<ul>
+<li><code>/dev/hda3</code> &#x8868;&#x793A;&#x5728;&#x7B2C;&#x4E00;&#x4E2A; IDE &#x786C;&#x76D8;&#x4E0A;&#x7684;&#x7B2C;&#x4E09;&#x4E2A;&#x4E3B;&#x5206;&#x533A;</li>
+<li><code>/dev/sdb6</code> &#x8868;&#x793A;&#x5728;&#x7B2C;&#x4E8C;&#x4E2A; SCSI &#x786C;&#x76D8;&#x4E0A;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x903B;&#x8F91;&#x5206;&#x533A;</li>
+</ul>
+<h4 id="fdisk-&#x547D;&#x4EE4;&#x67E5;&#x770B;&#x786C;&#x76D8;"><code>fdisk</code> &#x547D;&#x4EE4;&#x67E5;&#x770B;&#x786C;&#x76D8;</h4>
+<p>&#x8BED;&#x6CD5;&#xFF1A;<code>fdisk -l &lt;&#x786C;&#x76D8;&#x540D;|&#x5206;&#x533A;&#x540D;&gt;</code></p>
+<p><strong>&#x300C;&#x793A;&#x4F8B;&#x300D;</strong></p>
+<p>&#x67E5;&#x770B;&#x7B2C;&#x4E00;&#x5757;&#x786C;&#x76D8;&#xFF1A;</p>
+<pre><code class="lang-bash">fdisk <span class="hljs-_">-l</span> /dev/sda
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code>&#x78C1;&#x76D8; /dev/sda&#xFF1A;21.5 GB, 21474836480 &#x5B57;&#x8282;&#xFF0C;41943040 &#x4E2A;&#x6247;&#x533A;
+Units = &#x6247;&#x533A; of 1 * 512 = 512 bytes
+&#x6247;&#x533A;&#x5927;&#x5C0F;(&#x903B;&#x8F91;/&#x7269;&#x7406;)&#xFF1A;512 &#x5B57;&#x8282; / 512 &#x5B57;&#x8282;
+I/O &#x5927;&#x5C0F;(&#x6700;&#x5C0F;/&#x6700;&#x4F73;)&#xFF1A;512 &#x5B57;&#x8282; / 512 &#x5B57;&#x8282;
+&#x78C1;&#x76D8;&#x6807;&#x7B7E;&#x7C7B;&#x578B;&#xFF1A;dos
+&#x78C1;&#x76D8;&#x6807;&#x8BC6;&#x7B26;&#xFF1A;0x000d46a4
+
+   &#x8BBE;&#x5907; Boot      Start         End      Blocks   Id  System
+/dev/sda1            2048     4196351     2097152   82  Linux swap / Solaris
+/dev/sda2   *     4196352    41943039    18873344   83  Linux
+</code></pre><p><strong>&#x300C;&#x8BF4;&#x660E;&#x300D;</strong></p>
+<p>&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x7B2C;1&#x884C;</td>
+<td>&#x786C;&#x76D8;&#x5BB9;&#x91CF;</td>
+</tr>
+<tr>
+<td>&#x7B2C;2&#x884C;</td>
+<td>&#x6BCF;&#x4E2A;&#x67F1;&#x9762;&#x7684;&#x5BB9;&#x91CF;</td>
+</tr>
+<tr>
+<td>&#x7B2C;3&#x884C;</td>
+<td>&#x6BCF;&#x4E2A;&#x6247;&#x533A;&#x7684;&#x5BB9;&#x91CF;</td>
+</tr>
+<tr>
+<td>&#x7B2C;4&#x884C;</td>
+<td>&#x78C1;&#x76D8;&#x6700;&#x5C0F;&#x903B;&#x8F91;&#x548C;&#x7269;&#x7406;&#x5355;&#x5143;&#xFF08;&#x78C1;&#x76D8;&#x8BFB;&#x5199;&#x7684;&#x6700;&#x5C0F;&#x5355;&#x5143;&#xFF09;</td>
+</tr>
+<tr>
+<td>&#x7B2C;5&#x884C;</td>
+<td>&#x786C;&#x76D8;&#x6807;&#x7B7E;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td>&#x7B2C;6&#x884C;</td>
+<td>&#x786C;&#x76D8;&#x6807;&#x8BC6;&#x7B26;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x7B2C;&#x4E8C;&#x90E8;&#x5206;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6807;&#x9898;</th>
+<th>&#x793A;&#x4F8B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Device(&#x8BBE;&#x5907;)</td>
+<td>/dev/sda1</td>
+<td>&#x5206;&#x533A;&#x540D;</td>
+</tr>
+<tr>
+<td>Boot</td>
+<td></td>
+<td>&#x662F;&#x5426;&#x5141;&#x8BB8;&#x6807;&#x51C6;DOS PC&#x4E3B;&#x5F15;&#x5BFC;&#x8BB0;&#x5F55;&#x5F15;&#x5BFC;&#x8BE5;&#x5206;&#x533A;&#x3002;</td>
+</tr>
+<tr>
+<td>Start</td>
+<td>2048</td>
+<td>&#x5206;&#x533A;&#x7684;&#x8D77;&#x59CB;&#x67F1;&#x9762;</td>
+</tr>
+<tr>
+<td>End</td>
+<td>4196351</td>
+<td>&#x5206;&#x533A;&#x7684;&#x7ED3;&#x675F;&#x67F1;&#x9762;&#xFF08;&#x7D27;&#x90BB;&#x4E0B;&#x4E00;&#x8D77;&#x59CB;&#x67F1;&#x9762;&#xFF09;</td>
+</tr>
+<tr>
+<td>Blocks</td>
+<td>2097152</td>
+<td>&#x663E;&#x793A;&#x5927;&#x5C0F;&#x4E3A; 1k &#x7684;&#x5757;&#x7684;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>Id</td>
+<td>82</td>
+<td>&#x5206;&#x533A;&#x7684;&#x9884;&#x671F;&#x7528;&#x9014;&#xFF08;&#x4E0D;&#x4EE3;&#x8868;&#x5206;&#x533A;&#x7684;&#x771F;&#x5B9E;&#x7528;&#x9014;&#xFF09;&#x3002;82&#x8868;&#x793A;Linux&#x4EA4;&#x6362;&#x5206;&#x533A;&#xFF0C;83&#x8868;&#x793A;Linux&#x6570;&#x636E;&#x5206;&#x533A;</td>
+</tr>
+<tr>
+<td>System</td>
+<td>Linux swap / Solaris</td>
+<td>&#x8868;&#x793A;&#x4E0A;&#x4E00;&#x5B57;&#x6BB5; ID &#x7684;&#x7C7B;&#x578B;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x300C;&#x6CE8;&#x610F;&#x300D;</strong></p>
+<p>&#x793A;&#x4F8B;&#x8F93;&#x51FA;&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#x4E3A;&#x903B;&#x8F91;&#x503C;&#xFF0C;&#x5E76;&#x5B9E;&#x9645;&#x786C;&#x76D8;&#x7684;&#x771F;&#x5B9E;&#x7269;&#x7406;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x56FA;&#x6001;&#x786C;&#x76D8;&#x867D;&#x7136;&#x6CA1;&#x6709;&#x76D8;&#x7247;&#x3001;&#x78C1;&#x5934;&#x3001;&#x6247;&#x533A;&#x8FD9;&#x4E9B;&#x7269;&#x7406;&#x96F6;&#x4EF6;&#xFF0C;&#x4F46;&#x56FA;&#x6001;&#x786C;&#x76D8;&#x7684;&#x63A5;&#x53E3;&#x89C4;&#x8303;&#x548C;&#x5B9A;&#x4E49;&#x529F;&#x80FD;&#x4EE5;&#x53CA;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x4E0A;&#x4E0E;&#x666E;&#x901A;&#x673A;&#x68B0;&#x786C;&#x76D8;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x903B;&#x8F91;&#x4E0A;&#x56FA;&#x6001;&#x786C;&#x76D8;&#x4E5F;&#x6709;&#x4EE5;&#x4E0A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#x8F93;&#x51FA;&#x7B2C;&#x4E8C;&#x90E8;&#x5206;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5206;&#x597D;&#x533A;&#xFF0C;&#x5219;&#x663E;&#x793A;&#x4E3A;&#x7A7A;&#x767D;&#x3002;</p>
+<h3 id="&#x786C;&#x76D8;&#x5206;&#x533A;&#x548C;&#x683C;&#x5F0F;&#x5316;">&#x786C;&#x76D8;&#x5206;&#x533A;&#x548C;&#x683C;&#x5F0F;&#x5316;</h3>
+<h4 id="&#x5206;&#x533A;&#x5DE5;&#x5177;&#x9009;&#x62E9;">&#x5206;&#x533A;&#x5DE5;&#x5177;&#x9009;&#x62E9;</h4>
+<p>Linux &#x4E2D;&#x5BF9;&#x786C;&#x76D8;&#x5206;&#x533A;&#x6709;&#x5F88;&#x591A;&#x5DE5;&#x5177;&#xFF0C;&#x5982; fdisk&#x3001;gdisk&#x3001;cfdisk&#x3001;cgdisk&#x3001;sgdisk&#x3001;parted &#x7B49;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x9009;&#x62E9; fdisk&#x3002;</p>
+<h4 id="fdisk-&#x547D;&#x4EE4;&#x7528;&#x6CD5;"><code>fdisk</code> &#x547D;&#x4EE4;&#x7528;&#x6CD5;</h4>
+<h5 id="&#x300C;&#x7528;&#x6CD5;&#x300D;">&#x300C;&#x7528;&#x6CD5;&#x300D;</h5>
+<p><code>fdisk &lt;&#x786C;&#x76D8;&#x540D;&gt;</code>         &#x66F4;&#x6539;&#x5206;&#x533A;&#x8868;</p>
+<p><code>fdisk -l [&#x786C;&#x76D8;&#x540D;]</code>     &#x5217;&#x51FA;&#x5206;&#x533A;&#x8868;</p>
+<h5 id="&#x300C;&#x793A;&#x4F8B;&#x300D;">&#x300C;&#x793A;&#x4F8B;&#x300D;</h5>
+<p>&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x8FDB;&#x5165;&#x5206;&#x533A;&#x66F4;&#x6539;&#x754C;&#x9762;&#xFF1A;</p>
+<pre><code class="lang-bash">fdisk /dev/sda
+</code></pre>
+<p>&#x300C;&#x6CE8;&#x610F;&#x300D;</p>
+<p>&#x7531;&#x4E8E;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x4E14;&#x6CA1;&#x6709;&#x4E3A;&#x8BE5;&#x865A;&#x62DF;&#x673A;&#x5206;&#x914D;&#x591A;&#x4F59;&#x7A7A;&#x95F4;&#xFF0C;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x4F7F;&#x7528; <code>sda</code> &#x65B0;&#x5EFA;&#x5206;&#x533A;&#x3002;&#x6709;&#x4E24;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p>&#x2460; &#x4F7F;&#x7528; <code>sda</code> &#x7684;&#x4E3B;&#x5206;&#x533A; <code>sda2</code> &#xFF0C;&#x8FDB;&#x4E00;&#x6B65;&#x5212;&#x5206;&#x5206;&#x533A;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x5B66;&#x4E60;&#x5B9E;&#x9A8C;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x4FDD;&#x5B58;&#x5206;&#x533A;&#x914D;&#x7F6E;&#x4F1A;&#x5931;&#x8D25;&#x3002;&#x3002; </p>
+<p>&#x2461; &#x4F7F;&#x7528;&#x865A;&#x62DF;&#x673A;&#x8F6F;&#x4EF6;&#x7ED9;&#x5F53;&#x524D;&#x865A;&#x62DF;&#x673A;&#x65B0;&#x589E;&#x4E00;&#x4E2A; 2G &#x7684;&#x786C;&#x76D8;&#x3002;&#x5BF9;&#x4E8E; VM 15 Pro&#xFF0C;&#x4F9D;&#x6B21;&#x70B9;&#x51FB;&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x300B;&#x8BBE;&#x7F6E;&#x300B;&#x627E;&#x5DE6;&#x4E0B;&#x7684;&#x300C;&#x6DFB;&#x52A0;&#x300D;&#x6309;&#x94AE;&#x300B;&#x9009;&#x62E9;&#x786C;&#x76D8;&#x300B;3&#x6B21;&#x4E0B;&#x4E00;&#x6B65;&#x300B;&#x78C1;&#x76D8;&#x5927;&#x5C0F;&#x6539;&#x4E3A; 2G &#x300B;&#x4E0B;&#x4E00;&#x6B65;&#x300B;&#x5B8C;&#x6210;&#x300B;&#x786E;&#x5B9A;&#x3002;&#x91CD;&#x542F;&#x865A;&#x62DF;&#x673A;&#x5373;&#x53EF;&#x3002;</p>
+<h4 id="fdisk&#x5DE5;&#x5177;&#x5185;&#x547D;&#x4EE4;"><code>fdisk</code>&#x5DE5;&#x5177;&#x5185;&#x547D;&#x4EE4;</h4>
+<blockquote>
+<p>&#x8FDB;&#x5165; <code>fdisk</code> &#x5206;&#x533A;&#x9875;&#x9762;&#x540E;&#xFF0C;&#x5728;&#x300C;Command (m for help):&#x300D;&#x6216;&#x300C;&#x547D;&#x4EE4;&#xFF08;&#x8F93;&#x5165;  m &#x83B7;&#x53D6;&#x5E2E;&#x52A9;&#xFF09;&#xFF1A;&#x300D;&#x540E;&#x8F93;&#x5165;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x4F7F;&#x7528;&#x76F8;&#x5173;&#x529F;&#x80FD;&#x3002;</p>
+</blockquote>
+<h5 id="&#x547D;&#x4EE4;&#x53CA;&#x8BF4;&#x660E;">&#x547D;&#x4EE4;&#x53CA;&#x8BF4;&#x660E;</h5>
+<table>
+<thead>
+<tr>
+<th>&#x547D;&#x4EE4;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>m</code></td>
+<td>&#x5E2E;&#x52A9;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td><code>n</code></td>
+<td>&#x65B0;&#x5EFA;&#x5206;&#x533A;</td>
+</tr>
+<tr>
+<td><code>d</code></td>
+<td>&#x5220;&#x9664;&#x5206;&#x533A;</td>
+</tr>
+<tr>
+<td><code>l</code></td>
+<td>&#x5217;&#x51FA; Linux &#x9ED8;&#x8BA4;&#x652F;&#x6301;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td><code>p</code></td>
+<td>&#x6253;&#x5370;&#x5206;&#x533A;&#x8868;&#xFF08;&#x76F8;&#x5F53;&#x4E8E;&#x5728; bash &#x4E2D;&#x4F7F;&#x7528; <code>fdisk -l &lt;&#x786C;&#x76D8;&#x540D;&gt;</code>&#xFF09;</td>
+</tr>
+<tr>
+<td><code>t</code></td>
+<td>&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x5206;&#x533A; ID&#xFF0C;&#x4FEE;&#x6539;&#x5206;&#x533A;&#x7C7B;&#x578B;</td>
+</tr>
+<tr>
+<td><code>w</code></td>
+<td>&#x5199;&#x5165;&#x64CD;&#x4F5C;&#x5230;&#x5206;&#x533A;&#x8868;&#x5E76;&#x9000;&#x51FA;</td>
+</tr>
+<tr>
+<td><code>q</code></td>
+<td>&#x4E0D;&#x4FDD;&#x7559;&#x64CD;&#x4F5C;&#x5E76;&#x9000;&#x51FA;</td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td>&#x8FDB;&#x5165;&#x4E13;&#x5BB6;&#x6A21;&#x5F0F;</td>
+</tr>
+</tbody>
+</table>
+<h5 id="n-&#x65B0;&#x5EFA;&#x5206;&#x533A;"><code>n</code> &#x65B0;&#x5EFA;&#x5206;&#x533A;</h5>
+<p>&#x8F93;&#x5165; <code>n</code> &#x56DE;&#x8F66;&#xFF0C;&#x63D0;&#x793A;&#x9009;&#x62E9;&#x4E3B;&#x5206;&#x533A; (<code>p</code>) &#x8FD8;&#x662F;&#x6269;&#x5C55;&#x5206;&#x533A; (<code>e</code>)&#x3002;&#x5982;&#x679C;&#x5DF2;&#x5B58;&#x5728;&#x6269;&#x5C55;&#x5206;&#x533A;&#xFF0C;&#x5C06;&#x4F1A;&#x7528;&#x903B;&#x8F91;&#x5206;&#x533A; (<code>l</code>) &#x66FF;&#x6362;&#x539F;&#x6269;&#x5C55;&#x5206;&#x533A;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<h6 id="&#x300C;&#x9009;&#x62E9;&#x65B0;&#x5EFA;&#x4E3B;&#x5206;&#x533A;&#x300D;">&#x300C;&#x9009;&#x62E9;&#x65B0;&#x5EFA;&#x4E3B;&#x5206;&#x533A;&#x300D;</h6>
+<p>&#x2460; &#x76F4;&#x63A5;&#x56DE;&#x8F66;&#xFF08;&#x9ED8;&#x8BA4;&#x9009;&#x62E9;&#x4E3B;&#x5206;&#x533A; <code>p</code>&#xFF09;&#x6216;&#x8F93;&#x5165; <code>p</code> &#x56DE;&#x8F66;&#x3002;
+&#x2461; &#x63D0;&#x793A;&#x8F93;&#x5165;&#x5206;&#x533A;&#x53F7;&#xFF0C;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x56DE;&#x8F66;&#x6216;&#x6839;&#x636E;&#x63D0;&#x793A;&#x8F93;&#x5165; 1-4 &#x3002;&#x5982;&#x679C;&#x63D0;&#x793A;&#x300C;No free sectors available&#x300D;&#x8868;&#x793A;&#x65E0;&#x5269;&#x4F59;&#x6247;&#x533A;&#x53EF;&#x7528;&#xFF0C;&#x5373;&#x6CA1;&#x6709;&#x591A;&#x4F59;&#x7A7A;&#x95F4;&#x53EF;&#x5206;&#x914D;&#x3002;&#x8BE5;&#x60C5;&#x51B5;&#x53EF;&#x4F7F;&#x7528;&#x67D0;&#x4E2A;&#x4E3B;&#x5206;&#x533A;&#x8FDB;&#x884C;&#x5206;&#x533A;&#x8BBE;&#x7F6E;&#xFF0C;&#x5982;&#x4F7F;&#x7528; <code>fdisk /dev/sda2</code> &#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x3002;
+&#x2462; &#x63A5;&#x7740;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x8D77;&#x59CB;&#x6247;&#x533A;&#xFF0C;&#x5982;&#x65E0;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF0C;&#x76F4;&#x63A5;&#x56DE;&#x8F66;&#x5373;&#x53EF;&#x3002;
+&#x2463; &#x63A5;&#x7740;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x7ED3;&#x675F;&#x6247;&#x533A;&#xFF08;&#x8FD9;&#x4E2A;&#x4E0D;&#x597D;&#x7B97;&#xFF09;&#xFF0C;&#x4E00;&#x822C;&#x8F93;&#x5165; <code>+size&lt;K|M|G&gt;</code> &#xFF0C;&#x8868;&#x793A;&#x5206;&#x914D;&#x76F8;&#x5E94;&#x5927;&#x5C0F;&#x7684;&#x7A7A;&#x95F4;&#x3002;&#x5982; <code>+100G</code> &#xFF0C;&#x8868;&#x793A;&#x5206;&#x914D; <code>100G</code> &#x5927;&#x5C0F;&#x7684;&#x7A7A;&#x95F4;&#x3002;&#xFF08;&#x6CE8;&#x610F;&#x5E26;&#x5355;&#x4F4D;&#xFF0C;&#x4E0D;&#x5E26;&#x5355;&#x4F4D;&#x9ED8;&#x8BA4;&#x4E3A; <code>k</code>&#xFF09;</p>
+<h6 id="&#x300C;&#x9009;&#x62E9;&#x65B0;&#x5EFA;&#x6269;&#x5C55;&#x5206;&#x533A;&#x300D;">&#x300C;&#x9009;&#x62E9;&#x65B0;&#x5EFA;&#x6269;&#x5C55;&#x5206;&#x533A;&#x300D;</h6>
+<p>&#x2460; &#x8F93;&#x5165; <code>e</code> &#x56DE;&#x8F66;&#x3002;
+&#x2461; &#x63D0;&#x793A;&#x8F93;&#x5165;&#x5206;&#x533A;&#x53F7;&#xFF0C;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x56DE;&#x8F66;&#x6216;&#x6839;&#x636E;&#x63D0;&#x793A;&#x8F93;&#x5165; 1-4 &#x3002;&#x5982;&#x679C;&#x63D0;&#x793A;&#x300C;No free sectors available&#x300D;&#x8868;&#x793A;&#x65E0;&#x5269;&#x4F59;&#x6247;&#x533A;&#x53EF;&#x7528;&#xFF0C;&#x5373;&#x6CA1;&#x6709;&#x591A;&#x4F59;&#x7A7A;&#x95F4;&#x53EF;&#x5206;&#x914D;&#x3002;
+&#x2462; &#x63A5;&#x7740;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x8D77;&#x59CB;&#x6247;&#x533A;&#xFF0C;&#x5982;&#x65E0;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF0C;&#x76F4;&#x63A5;&#x56DE;&#x8F66;&#x5373;&#x53EF;&#x3002;
+&#x2463; &#x63A5;&#x7740;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x7ED3;&#x675F;&#x6247;&#x533A;&#xFF0C;&#x5982;&#x8F93;&#x5165; <code>+10G</code> &#xFF0C;&#x8868;&#x793A;&#x5206;&#x914D; <code>10G</code> &#x5927;&#x5C0F;&#x7684;&#x7A7A;&#x95F4;&#x3002;</p>
+<h6 id="&#x300C;&#x9009;&#x62E9;&#x65B0;&#x5EFA;&#x903B;&#x8F91;&#x5206;&#x533A;&#x300D;">&#x300C;&#x9009;&#x62E9;&#x65B0;&#x5EFA;&#x903B;&#x8F91;&#x5206;&#x533A;&#x300D;</h6>
+<p>&#x3007; &#x5EFA;&#x7ACB;&#x6269;&#x5C55;&#x5206;&#x533A;&#x540E;&#x518D;&#x6B21;&#x8F93;&#x5165; <code>n</code> &#x65B0;&#x5EFA;&#x5206;&#x533A;&#xFF0C;&#x5C06;&#x4F1A;&#x4EE5;&#x8BE5;&#x9009;&#x9879;&#xFF08;&#x65B0;&#x5EFA;&#x903B;&#x8F91;&#x5206;&#x533A;&#xFF09;&#x66FF;&#x4EE3;&#x4E4B;&#x3002;
+&#x2460; &#x8F93;&#x5165; <code>l</code> &#x56DE;&#x8F66;&#x3002;
+&#x2461; &#x63D0;&#x793A;&#x8F93;&#x5165;&#x5206;&#x533A;&#x53F7;&#xFF0C;&#x76F4;&#x63A5;&#x8FDB;&#x884C;&#x56DE;&#x8F66;&#x6216;&#x6839;&#x636E;&#x63D0;&#x793A;&#x8F93;&#x5165; 1-4 &#x3002;&#x5982;&#x679C;&#x63D0;&#x793A;&#x300C;No free sectors available&#x300D;&#x8868;&#x793A;&#x65E0;&#x5269;&#x4F59;&#x6247;&#x533A;&#x53EF;&#x7528;&#xFF0C;&#x5373;&#x6CA1;&#x6709;&#x591A;&#x4F59;&#x7A7A;&#x95F4;&#x53EF;&#x5206;&#x914D;&#x3002;
+&#x2462; &#x63A5;&#x7740;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x8D77;&#x59CB;&#x6247;&#x533A;&#xFF0C;&#x5982;&#x65E0;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF0C;&#x76F4;&#x63A5;&#x56DE;&#x8F66;&#x5373;&#x53EF;&#x3002;
+&#x2463; &#x63A5;&#x7740;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x7ED3;&#x675F;&#x6247;&#x533A;&#xFF0C;&#x5982;&#x8F93;&#x5165; <code>+10G</code> &#xFF0C;&#x8868;&#x793A;&#x5206;&#x914D; <code>10G</code> &#x5927;&#x5C0F;&#x7684;&#x7A7A;&#x95F4;&#x3002;</p>
+<p>&#x5206;&#x533A;&#x8BBE;&#x7F6E;&#x5B8C;&#x6BD5;&#xFF0C;&#x8F93;&#x5165; <code>p</code> &#x547D;&#x4EE4;&#x67E5;&#x770B;&#x662F;&#x5426;&#x4FEE;&#x6539;&#x6210;&#x529F;&#x3002;</p>
+<h5 id="t-&#x4FEE;&#x6539;&#x5206;&#x533A;&#x7C7B;&#x578B;"><code>t</code> &#x4FEE;&#x6539;&#x5206;&#x533A;&#x7C7B;&#x578B;</h5>
+<p>&#x2460; &#x8F93;&#x5165; <code>t</code> &#x56DE;&#x8F66;&#x3002;
+&#x2461; &#x8F93;&#x5165;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x5206;&#x533A;&#x53F7;&#x3002;
+&#x2462; &#x8F93;&#x5165;&#x8981;&#x4FEE;&#x6539;&#x7684; ID &#x7F16;&#x53F7;&#x3002;</p>
+<p>&#x5B8C;&#x6210;&#xFF0C;&#x8F93;&#x5165; <code>p</code> &#x547D;&#x4EE4;&#x67E5;&#x770B;&#x662F;&#x5426;&#x4FEE;&#x6539;&#x6210;&#x529F;&#x3002;</p>
+<h4 id="&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x683C;&#x5F0F;&#x5316;&#x5206;&#x533A;">&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;/&#x683C;&#x5F0F;&#x5316;&#x5206;&#x533A;</h4>
+<blockquote>
+<p>&#x786C;&#x76D8;&#x5206;&#x533A;&#x4E4B;&#x540E;&#x4E00;&#x822C;&#x9700;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x5206;&#x533A;</p>
+</blockquote>
+<h5 id="mkfs-&#x547D;&#x4EE4;&#xFF08;make-files-system&#xFF09;"><code>mkfs</code> &#x547D;&#x4EE4;&#xFF08;Make Files&apos; System&#xFF09;</h5>
+<p>&#x300C;&#x7528;&#x6CD5;&#x300D;</p>
+<p><code>mkfs -t &lt;&#x7C7B;&#x578B;&gt; &lt;&#x8BBE;&#x5907;&#x76EE;&#x5F55;&gt;</code> &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#xFF1B;&#x82E5;&#x4E0D;&#x6307;&#x5B9A;&#xFF0C;&#x5C06;&#x4F7F;&#x7528; ext2 &#x3002;</p>
+<p>&#x300C;&#x793A;&#x4F8B;&#x300D;</p>
+<pre><code class="lang-bash">mkfs -t ext4 /dev/sdb6
+</code></pre>
+<h5 id="mkswap-&#x547D;&#x4EE4;&#xFF08;make-swap&#xFF09;"><code>mkswap</code> &#x547D;&#x4EE4;&#xFF08;Make Swap&#xFF09;</h5>
+<p>&#x300C;&#x793A;&#x4F8B;&#x300D;</p>
+<p><code>mkswap /dev/sdb7</code>&#x5C06; <code>sdb7</code> &#x8BBE;&#x7F6E;&#x4E3A;&#x4EA4;&#x6362;&#x7A7A;&#x95F4;&#xFF0C;&#x65E0;&#x9700;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#xFF0C;&#x4EA4;&#x6362;&#x7A7A;&#x95F4;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x4E3A; swap&#x3002; </p>
+<h3 id="&#x624B;&#x52A8;&#x6302;&#x8F7D;&#x5206;&#x533A;">&#x624B;&#x52A8;&#x6302;&#x8F7D;&#x5206;&#x533A;</h3>
+<h4 id="&#x51C6;&#x5907;">&#x51C6;&#x5907;</h4>
+<p><strong>&#x300C;&#x6302;&#x8F7D;&#x70B9;&#x6982;&#x5FF5;&#x300D;</strong></p>
+<p>Linux &#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x662F;&#x4E00;&#x4E2A;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#xFF0C;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x7684;&#x6839;&#x5C31;&#x662F;&#x300C;&#x6839;&#x76EE;&#x5F55;&#x300D;(<code>/</code>)&#xFF0C;&#x6839;&#x5206;&#x533A;&#x5728;&#x5F00;&#x673A;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x81EA;&#x9001;&#x6302;&#x8F7D;&#x5728;&#x6839;&#x76EE;&#x5F55;&#x4E0A;&#x4E86;&#x3002;&#x6211;&#x4EEC;&#x5212;&#x5206;&#x5E76;&#x683C;&#x5F0F;&#x5316;&#x597D;&#x7684;&#x5206;&#x533A;&#x4E5F;&#x8981;&#x6302;&#x8F7D;&#x5230;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x4E0A;&#x7684;&#x67D0;&#x4E2A;&#x76EE;&#x5F55;&#x4E0A;&#xFF0C;&#x624D;&#x80FD;&#x88AB;&#x4F7F;&#x7528;&#xFF0C;&#x5426;&#x5219;&#x8FD9;&#x4E2A;&#x5206;&#x533A;&#x5C31;&#x6CA1;&#x6709;&#x8BBF;&#x95EE;&#x7684;&#x5165;&#x53E3;&#x3002;&#x8FD9;&#x4E2A;&#x76EE;&#x5F55;&#x88AB;&#x79F0;&#x4E3A;&#x8BE5;&#x5206;&#x533A;&#x7684;&#x6302;&#x8F7D;&#x70B9;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x5C06;&#x5212;&#x5206;&#x5E76;&#x683C;&#x5F0F;&#x5316;&#x597D;&#x7684;&#x5206;&#x533A;&#x6302;&#x8F7D;&#x5230;&#x76EE;&#x5F55;&#x6811;&#x4E0A;&#x53BB;&#x3002;</p>
+<p><strong>&#x300C;&#x7CFB;&#x7EDF;&#x5176;&#x4ED6;&#x6302;&#x8F7D;&#x70B9;&#x300D;</strong></p>
+<p>&#x5728; bash &#x4E2D;&#x8F93;&#x5165; <code>mount</code> &#x547D;&#x4EE4;&#x67E5;&#x770B;&#x6302;&#x8F7D;&#x70B9;&#x3002;&#x5176;&#x663E;&#x793A;&#x7684;&#x5185;&#x5BB9;&#x5E76;&#x4E0D;&#x90FD;&#x662F;&#x771F;&#x6B63;&#x7684;&#x786C;&#x76D8;&#x5206;&#x533A;&#xFF0C;&#x800C;&#x662F;&#x5EFA;&#x7ACB;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x7684;&#x865A;&#x62DF;&#x5206;&#x533A;&#x3002;</p>
+<pre><code class="lang-bash">sysfs on /sys <span class="hljs-built_in">type</span> sysfs (rw,nosuid,nodev,noexec,relatime,seclabel) <span class="hljs-comment">#&#x7528;&#x4E8E;&#x7BA1;&#x7406;&#x8BBE;&#x5907;</span>
+proc on /proc <span class="hljs-built_in">type</span> proc (rw,nosuid,nodev,noexec,relatime) <span class="hljs-comment">#&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x8FDB;&#x7A0B;&#x53CA;&#x5185;&#x6838;&#x4FE1;&#x606F;</span>
+......
+tmpfs on /dev/shm <span class="hljs-built_in">type</span> tmpfs (rw,nosuid,nodev,seclabel) <span class="hljs-comment">#&#x6682;&#x65F6;&#x5B58;&#x653E;&#x6587;&#x4EF6;</span>
+devpts on /dev/pts <span class="hljs-built_in">type</span> devpts (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000) <span class="hljs-comment">#&#x7528;&#x4E8E;&#x7BA1;&#x7406;&#x8BBE;&#x5907;</span>
+......
+</code></pre>
+<p><strong>&#x300C;&#x51C6;&#x5907;&#x300D;</strong></p>
+<p>&#x5728;&#x6839;&#x7528;&#x6237;&#x4E0B;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<ul>
+<li>&#x5728;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;&#x76EE;&#x5F55;&#xFF1A; <code>mkdir /mountdisk</code></li>
+<li>&#x8FDB;&#x5165;&#x76EE;&#x5F55;&#xFF1A; <code>cd /mountdisk</code></li>
+<li>&#x521B;&#x5EFA; 5 &#x4E2A;&#x76EE;&#x5F55;&#x5206;&#x522B;&#x7528;&#x6237;&#x6302;&#x8F7D; sdb1&#xFF0C;sdb5-8 &#xFF1A;<code>mkdir document shared image music video</code></li>
+</ul>
+<h4 id="mount-&#x6302;&#x8F7D;&#x547D;&#x4EE4;"><code>mount</code> &#x6302;&#x8F7D;&#x547D;&#x4EE4;</h4>
+<p>&#x4E00;&#x822C;&#x9700;&#x8981;&#x6839;&#x7528;&#x6237;&#x6743;&#x9650;</p>
+<p><strong>&#x300C;&#x7528;&#x6CD5;&#x300D;</strong></p>
+<p><code>mount [-hV]</code> &#x65E0;&#x9009;&#x9879;&#x65F6;&#x8868;&#x793A;&#xFF1A;&#x67E5;&#x770B;&#x6302;&#x8F7D;&#x70B9;</p>
+<p><code>mount [-fnrsvw] [-t &lt;vfstype&gt;] [-o &lt;opts&gt;] &lt;&#x5206;&#x533A;&#x540D;&gt; &lt;&#x6302;&#x8F7D;&#x70B9;&gt;</code>  </p>
+<p><strong>&#x300C;&#x9009;&#x9879;&#x300D;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x9009;&#x9879;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-a</code></td>
+<td>&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x6240;&#x6709;&#x652F;&#x6301;&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x7684;&#x8BBE;&#x5907;&#xFF1B;(&#x5B9A;&#x4E49;&#x5728;&#x4E86;/etc/fstab&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E14;&#x6302;&#x8F7D;&#x9009;&#x9879;&#x4E2D;&#x6709;&#x201C;&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x201D;&#x529F;&#x80FD;)</td>
+</tr>
+<tr>
+<td><code>-V</code></td>
+<td>&#x663E;&#x793A;&#x7248;&#x672C;</td>
+</tr>
+<tr>
+<td><code>-h</code></td>
+<td>&#x663E;&#x793A;&#x5E2E;&#x52A9;</td>
+</tr>
+<tr>
+<td><code>-r</code></td>
+<td>&#x4EE5;&#x53EA;&#x8BFB;&#x65B9;&#x5F0F;&#x6302;&#x8F7D;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;&#x540C; <code>-o ro</code></td>
+</tr>
+<tr>
+<td><code>-w</code></td>
+<td>&#x4EE5;&#x53EF;&#x8BFB;&#x53EF;&#x5199;&#x7684;&#x65B9;&#x5F0F;&#x6302;&#x8F7D;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x6B21;&#x65B9;&#x5F0F;&#x3002;&#x540C; <code>-o rw</code></td>
+</tr>
+<tr>
+<td><code>-n</code></td>
+<td>&#x6302;&#x8F7D;&#x65F6;&#x4E0D;&#x66F4;&#x65B0; <code>/etc/mtab</code></td>
+</tr>
+<tr>
+<td><code>-t &lt;vfstype&gt;</code></td>
+<td>&#x6307;&#x5B9A;&#x6302;&#x8F7D;&#x5206;&#x533A;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#xFF0C;&#x901A;&#x5E38;&#x4E0D;&#x5FC5;&#x6307;&#x5B9A;&#x3002;mount &#x4F1A;&#x81EA;&#x52A8;&#x9009;&#x62E9;&#x6B63;&#x786E;&#x7684;&#x578B;&#x6001;&#x3002;</td>
+</tr>
+<tr>
+<td><code>-o &lt;options&gt;</code></td>
+<td>&#x6307;&#x5B9A;&#x5206;&#x533A;&#x6302;&#x8F7D;&#x540E;&#x7684;&#x4E00;&#x4E9B;&#x884C;&#x4E3A;&#x5C5E;&#x6027;</td>
+</tr>
+</tbody>
+</table>
+<p><code>vfstype</code> &#x8868;&#x793A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x80FD;&#x7684;&#x503C;&#x6709; adfs, affs, autofs, cifs, coda, coherent, cramfs, debugfs, devpts, efs, ext, ext2, ext3, ext4, hfs, hfsplus, hpfs, iso9660, jfs, minix, msdos, ncpfs, nfs, nfs4, ntfs, proc, qnx4, ramfs, reiserfs, romfs, squashfs, smbfs, sysv, tmpfs, ubifs, udf,  ufs, umsdos,  usbfs,  vfat,  xenix, xfs, xiafs.</p>
+<p><code>-o &lt;options&gt;</code> &#x4E2D; <code>options</code> &#x53EF;&#x4EE5;&#x662F; rw/ro &#x53EF;&#x8BFB;&#x53EF;&#x5199;(&#x9ED8;&#x8BA4;)/&#x53EA;&#x8BFB;&#x3001;auto/noauto &#x6253;&#x5F00;(&#x9ED8;&#x8BA4;)/&#x5173;&#x95ED;&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x6A21;&#x5F0F;&#x7B49;&#x3002;&#x8BE6;&#x89C1; <a href="https://blog.csdn.net/daydayup654/article/details/78788310" target="_blank">Linux&#x4E2D;&#x6302;&#x8F7D;&#x8BE6;&#x89E3;&#x4EE5;&#x53CA;mount&#x547D;&#x4EE4;&#x7528;&#x6CD5;</a>&#x3002;</p>
+<p><strong>&#x300C;&#x793A;&#x4F8B; 1&#xFF1A;&#x6307;&#x5B9A;&#x6302;&#x8F7D;&#x5206;&#x533A;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#x300D;</strong></p>
+<pre><code class="lang-bash">mount -t ext4 /dev/sdb1 /mountdisk/document
+</code></pre>
+<p>&#x4F7F;&#x7528; <code>mount</code> &#x547D;&#x4EE4;&#x67E5;&#x770B;&#x6302;&#x8F7D;&#x70B9;&#xFF0C;&#x6700;&#x4E0B;&#x65B9;&#x51FA;&#x73B0;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<pre><code>/dev/sdb1 on /mountdisk/document type ext4 (rw,relatime,seclabel,data=ordered)
+</code></pre><p><strong>&#x300C;&#x793A;&#x4F8B; 2&#xFF1A;&#x4F7F;&#x7528; <code>-o</code> &#x6307;&#x5B9A;&#x6302;&#x8F7D;&#x540E;&#x7684;&#x884C;&#x4E3A;&#x5C5E;&#x6027;&#x300D;</strong></p>
+<pre><code class="lang-bash">mount -t ext4 -o ro /dev/sdb5 /mountdisk/shared
+</code></pre>
+<p><strong>&#x300C;&#x6CE8;&#x610F;&#x300D;</strong></p>
+<p>&#x5982;&#x679C;&#x6302;&#x8F7D;&#x70B9;&#x539F;&#x6765;&#x5B58;&#x5728;&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x5206;&#x533A;&#x6302;&#x8F7D;&#x5230;&#x8BE5;&#x6302;&#x8F7D;&#x70B9;&#x540E;&#x539F;&#x6765;&#x7684;&#x6587;&#x4EF6;&#x5C06;&#x88AB;&#x9690;&#x85CF;&#x3002;</p>
+<h4 id="umount-&#x5378;&#x8F7D;&#x547D;&#x4EE4;"><code>umount</code> &#x5378;&#x8F7D;&#x547D;&#x4EE4;</h4>
+<p>&#x4E00;&#x822C;&#x9700;&#x8981;&#x6839;&#x7528;&#x6237;&#x6743;&#x9650;</p>
+<p><strong>&#x300C;&#x7528;&#x6CD5;&#x300D;</strong></p>
+<pre><code class="lang-bash">umount [-ahnrvV][-t &lt;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&gt;][&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;|&#x8BBE;&#x5907;&#x540D;|&#x6302;&#x8F7D;&#x70B9;]
+</code></pre>
+<p><strong>&#x300C;&#x793A;&#x4F8B;&#x300D;</strong></p>
+<pre><code class="lang-bash">umount /dev/sdb7
+</code></pre>
+<p><strong>&#x300C;&#x6CE8;&#x610F;&#x300D;</strong></p>
+<p>&#x5F53;&#x5378;&#x8F7D;&#x5206;&#x533A;&#x5185;&#x6709;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x5378;&#x8F7D;&#x540E;&#x901A;&#x8FC7;&#x539F;&#x6302;&#x8F7D;&#x70B9;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x8BE5;&#x5206;&#x533A;&#x6570;&#x636E;&#x3002;&#x4F46;&#x6570;&#x636E;&#x4F9D;&#x7136;&#x5B58;&#x5728;&#x4E0E;&#x8BE5;&#x5206;&#x533A;&#x3002;</p>
+<h3 id="&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x5206;&#x533A;">&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x5206;&#x533A;</h3>
+<p>&#x624B;&#x52A8;&#x6302;&#x8F7D;&#x53EF;&#x80FD;&#x4F1A;&#x9700;&#x8981;&#x5728;&#x91CD;&#x542F;&#x7CFB;&#x7EDF;&#x540E;&#x91CD;&#x65B0;&#x6302;&#x8F7D;&#x5206;&#x533A;&#x3002;</p>
+<h4 id="etcfstab-&#x6587;&#x4EF6;"><code>/etc/fstab</code> &#x6587;&#x4EF6;</h4>
+<p>&#x8BE5;&#x6587;&#x4EF6;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x5F00;&#x673A;&#x6302;&#x8F7D;&#x7684;&#x5206;&#x533A;&#x3002;</p>
+<p><strong>&#x300C;&#x6253;&#x5F00;&#x300D;</strong></p>
+<pre><code class="lang-bash">vim /etc/fstab
+</code></pre>
+<p><strong>&#x300C;&#x89E3;&#x91CA;&#x300D;</strong></p>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;</th>
+<th>&#x793A;&#x4F8B;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>UUID=XXX</td>
+<td>&#x6307;&#x5B9A;&#x4E86;&#x8981;&#x6302;&#x8F7D;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x53EF;&#x4EE5;&#x662F; <code>/dev</code> &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x8BBE;&#x5907;&#x6587;&#x4EF6;&#xFF0C;&#x6216;&#x901A;&#x8FC7; UUID &#x6216;&#x8BBE;&#x5907;&#x6807;&#x7B7E;&#xFF08;LABEL&#xFF09;&#x6307;&#x5B9A;&#x8BBE;&#x5907;&#x3002;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>/</td>
+<td>&#x6302;&#x8F7D;&#x70B9;&#x3002;swap &#x662F;&#x6CA1;&#x6709;&#x6302;&#x8F7D;&#x76EE;&#x5F55;&#x5C31;&#x662F; swap&#x3002;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>ext4</td>
+<td>&#x6302;&#x8F7D;&#x5206;&#x533A;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#x3002;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>defaults</td>
+<td>&#x6302;&#x8F7D;&#x53C2;&#x6570;&#x3002;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x6302;&#x8F7D;&#x540E;&#x7684;&#x4E00;&#x4E9B;&#x884C;&#x4E3A;&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x4F7F;&#x7528;&#x9017;&#x53F7;&#x8FDB;&#x884C;&#x5206;&#x9694;&#x3002;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1</td>
+<td>Dump &#x53C2;&#x6570;&#x3002;&#x8BE5;&#x9009;&#x9879;&#x88AB;&#x300C;dump&#x300D;&#x547D;&#x4EE4;&#x7528;&#x6765;&#x68C0;&#x67E5;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x662F;&#x5426;&#x5E94;&#x8BE5;&#x8FDB;&#x884C; dump &#x5907;&#x4EFD;&#x3002;&#x4E0D;&#x9700;&#x8981;&#x8BBE;&#x4E3A; 0&#xFF0C;&#x6BCF;&#x5929;&#x5907;&#x4EFD;&#x8BBE;&#x4E3A; 1&#xFF0C;&#x4E0D;&#x5B9A;&#x671F;&#x5907;&#x4EFD;&#x8BBE;&#x4E3A; 2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1</td>
+<td>&#x5F00;&#x673A;&#x68C0;&#x67E5;&#x5206;&#x533A;&#x7684;&#x6B21;&#x5E8F;&#x3002;&#x8BE5;&#x5B57;&#x6BB5;&#x88AB; fsck &#x547D;&#x4EE4;&#x7528;&#x6765;&#x786E;&#x5B9A;&#x7CFB;&#x7EDF;&#x5F00;&#x673A;&#x8FDB;&#x884C;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x68C0;&#x67E5;&#x65F6;&#x7684;&#x987A;&#x5E8F;&#x3002;&#x6839;&#x5206;&#x533A;&#x7684;&#x503C;&#x4E3A; 1&#xFF0C;&#x8868;&#x793A;&#x4F18;&#x5148;&#x3002;2 &#x8868;&#x793A;&#x6B21;&#x4F18;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x5B57;&#x6BB5;&#x4E3A; 0 &#x6216;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#xFF0C;&#x5F00;&#x673A;&#x5C06;&#x8DF3;&#x8FC7;&#x6B64;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x68C0;&#x67E5;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x300C;&#x4FEE;&#x6539;&#x793A;&#x4F8B; 1&#xFF1A;&#x7528;&#x8BBE;&#x5907;&#x540D;&#x4FEE;&#x6539;&#x300D;</strong></p>
+<pre><code>/dev/sdb1    /mountdisk/document    ext4    defaults    0 0
+</code></pre><p>&#x7531;&#x4E8E;&#x786C;&#x76D8;&#x53EF;&#x80FD;&#x4F1A;&#x5B58;&#x5728;&#x7ECF;&#x5E38;&#x7684;&#x63D2;&#x62D4;&#xFF0C;&#x56E0;&#x6B64;&#x786C;&#x76D8;&#x7684;&#x6B21;&#x5E8F;&#x548C;&#x786C;&#x76D8;&#x7684;&#x8BBE;&#x5907;&#x540D;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x751F;&#x6539;&#x53D8;&#x3002;&#x5982;&#x4E0A;&#x4E00;&#x6B21;&#x4E3A; sdb &#xFF0C;&#x4E0B;&#x4E00;&#x6B21;&#x5C31;&#x53D8;&#x4E3A; sdc&#x3002;&#x6240;&#x4EE5;&#x8BE5;&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x7684;&#x914D;&#x7F6E;&#x5C31;&#x5931;&#x6548;&#x4E86;&#x3002;</p>
+<p>&#x4E3A;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;<strong>&#x4E3A;&#x786C;&#x76D8;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#x6216;UUID</strong>&#x3002;</p>
+<blockquote id="fn_&#x6807;&#x7B7E;">
+<sup>&#x6807;&#x7B7E;</sup>. &#x6807;&#x7B7E;&#x5C31;&#x662F;&#x7ED9;&#x786C;&#x76D8;&#x8D77;&#x7684;&#x4E00;&#x4E2A;&#x6709;&#x610F;&#x4E49;&#x7684;&#x522B;&#x540D;&#x3002;&#x4F46;&#x6807;&#x7B7E;&#x53EF;&#x4EE5;&#x4E0D;&#x552F;&#x4E00;&#x3002;<a href="#reffn_&#x6807;&#x7B7E;" title="Jump back to footnote [&#x6807;&#x7B7E;] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_&#x4E3A;&#x5206;&#x533A;&#x52A0;&#x6807;&#x7B7E;&#x7684;&#x547D;&#x4EE4;">
+<sup>&#x4E3A;&#x5206;&#x533A;&#x52A0;&#x6807;&#x7B7E;&#x7684;&#x547D;&#x4EE4;</sup>. &#x8BED;&#x6CD5;&#xFF1A;<code>e2label &#x5206;&#x533A;&#x8BBE;&#x5907;&#x540D; &#x6807;&#x7B7E;&#x540D;</code> &#x3002;&#x5982;&#xFF1A;<code>e2label /dev/sdb5 shared_disk</code><a href="#reffn_&#x4E3A;&#x5206;&#x533A;&#x52A0;&#x6807;&#x7B7E;&#x7684;&#x547D;&#x4EE4;" title="Jump back to footnote [&#x4E3A;&#x5206;&#x533A;&#x52A0;&#x6807;&#x7B7E;&#x7684;&#x547D;&#x4EE4;] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_UUID">
+<sup>UUID</sup>. &#x5168;&#x5C40;&#x552F;&#x4E00;&#x6807;&#x8BC6; (Universally Unique Identifier)&#x3002;&#x662F;&#x6807;&#x8BC6;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E0D;&#x8BBA;&#x662F;&#x4F55;&#x7C7B;&#x578B;&#x3002;&#x662F;&#x552F;&#x4E00;&#x7684;&#x3001;&#x4E0D;&#x53D8;&#x7684;&#x3002;<a href="#reffn_UUID" title="Jump back to footnote [UUID] in the text."> &#x21A9;</a>
+</blockquote>
+<blockquote id="fn_&#x5217;&#x51FA;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x7684;UUID">
+<sup>&#x5217;&#x51FA;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x7684;UUID</sup>. &#x4F7F;&#x7528; <code>blkid</code> &#x5217;&#x51FA;&#x6240;&#x6709;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x7684;UUID&#x3002;<a href="#reffn_&#x5217;&#x51FA;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x7684;UUID" title="Jump back to footnote [&#x5217;&#x51FA;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x7684;UUID] in the text."> &#x21A9;</a>
+</blockquote>
+<p><strong>&#x300C;&#x4FEE;&#x6539;&#x793A;&#x4F8B; 2&#xFF1A;&#x7528;&#x6807;&#x7B7E;&#x540D;&#x4FEE;&#x6539;&#x300D;</strong></p>
+<pre><code>LABEL=shared_disk /mountdisk/shared ext4 defaults 0 0
+</code></pre><p>&#x6B64;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;&#x7684; LABEL &#x6807;&#x7B7E;&#x4E0D;&#x4E00;&#x5B9A;&#x552F;&#x4E00;&#x3002;</p>
+<p><strong>&#x300C;&#x4FEE;&#x6539;&#x793A;&#x4F8B; 3&#xFF1A;&#x7528;UUID&#x4FEE;&#x6539;&#x300D;</strong></p>
+<pre><code>UUID=d9eae11c-f50c-4a34-92db-62d12a9be0dd /mountdisk/image      ext4    defaults        0 0
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part5-user-management.html" class="navigation navigation-prev " aria-label="Previous page: 第五章：用户管理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part7-network-management.html" class="navigation navigation-next " aria-label="Next page: 第七章：网络管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第六章：硬盘管理","level":"2.6","depth":1,"next":{"title":"第七章：网络管理","level":"2.7","depth":1,"path":"part7-network-management.md","ref":"part7-network-management.md","articles":[]},"previous":{"title":"第五章：用户管理","level":"2.5","depth":1,"path":"part5-user-management.md","ref":"part5-user-management.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part6-disk-management.md","mtime":"2020-11-29T12:21:05.143Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-16T15:33:38.359Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

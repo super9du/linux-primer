@@ -1,0 +1,713 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第九章：进程管理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="part10-resource-management.html" />
+    
+    
+    <link rel="prev" href="part8-software-management.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Linux 不入门到入门 · 介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="part1-start.html">
+            
+                <a href="part1-start.html">
+            
+                    
+                    第一章：开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="part2-file-management.html">
+            
+                <a href="part2-file-management.html">
+            
+                    
+                    第二章：文件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="part3-redirection-and-pipe.html">
+            
+                <a href="part3-redirection-and-pipe.html">
+            
+                    
+                    第三章：重定向与管道
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="part4-vim-editor.html">
+            
+                <a href="part4-vim-editor.html">
+            
+                    
+                    第四章：vim 文本编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="part5-user-management.html">
+            
+                <a href="part5-user-management.html">
+            
+                    
+                    第五章：用户管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="part6-disk-management.html">
+            
+                <a href="part6-disk-management.html">
+            
+                    
+                    第六章：硬盘管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="part7-network-management.html">
+            
+                <a href="part7-network-management.html">
+            
+                    
+                    第七章：网络管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="part8-software-management.html">
+            
+                <a href="part8-software-management.html">
+            
+                    
+                    第八章：软件管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.9" data-path="part9-process-management.html">
+            
+                <a href="part9-process-management.html">
+            
+                    
+                    第九章：进程管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="part10-resource-management.html">
+            
+                <a href="part10-resource-management.html">
+            
+                    
+                    第十章：资源管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="part11-daemon-and-security.html">
+            
+                <a href="part11-daemon-and-security.html">
+            
+                    
+                    第十一章：服务与安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="part12-remote.html">
+            
+                <a href="part12-remote.html">
+            
+                    
+                    第十二章：远程维护
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="terms.html">
+            
+                <a href="terms.html">
+            
+                    
+                    附录：名词参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="link.html">
+            
+                <a href="link.html">
+            
+                    
+                    友情链接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第九章：进程管理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4E5D;&#xFF09;&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;">&#x4E5D;&#xFF09;&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</h2>
+<h3 id="&#x540D;&#x8BCD;&#x89E3;&#x91CA;">&#x540D;&#x8BCD;&#x89E3;&#x91CA;</h3>
+<ul>
+<li><p><strong>&#x7A0B;&#x5E8F;&#xFF08;Program&#xFF09;</strong>&#xFF1A;&#x53EF;&#x8FD0;&#x884C;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x3002;</p>
+</li>
+<li><p><strong>&#x8FDB;&#x7A0B;&#xFF08;Process&#xFF09;</strong>&#xFF1A;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;&#x7A0B;&#x5E8F;&#x3002;</p>
+</li>
+<li><p><strong>&#x63A7;&#x5236;&#x7EC8;&#x7AEF;&#xFF08;Controll Terminal&#xFF09;</strong>&#xFF1A;Linux &#x6709; 7 &#x4E2A;&#x7EC8;&#x7AEF;&#x754C;&#x9762;&#xFF08;tty&#xFF0C;&#x516D;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x754C;&#x9762;&#xFF0C;&#x4E00;&#x4E2A;&#x56FE;&#x5F62;&#x754C;&#x9762;&#xFF09;&#xFF0C;&#x5206;&#x522B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>Alt</code>+<code>F1</code>/.../<code>F7</code> &#x5207;&#x6362;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x754C;&#x9762;&#x5361;&#x6B7B;&#xFF0C;&#x4E0D;&#x5F71;&#x54CD;&#x6253;&#x5F00;&#x5176;&#x4ED6;&#x51E0;&#x4E2A;&#x3002;</p>
+</li>
+<li><p><strong>&#x4F1A;&#x8BDD;&#xFF08;Session&#xFF09;</strong>&#xFF1A;&#x6211;&#x4EEC;&#x6BCF;&#x65B0;&#x5F00;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x5BF9;&#x8BDD;&#x6846;&#xFF0C;&#x5176;&#x5B9E;&#x6253;&#x5F00;&#x7684;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x771F;&#x6B63;&#x7684;&#x7EC8;&#x7AEF;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;&#x4F1A;&#x8BDD;&#x3002;&#x6BCF;&#x4E2A;&#x4F1A;&#x8BDD;&#x4F1A;&#x5173;&#x8054;&#x4E00;&#x4E2A;&#x7EC8;&#x7AEF;&#x3002;&#x4F7F;&#x7528; <code>ps</code> &#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x4F1A;&#x8BDD;&#x6240;&#x5C5E;&#x7684;&#x7EC8;&#x7AEF;&#x3002;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x5757;&#x6240;&#x793A;&#xFF0C;<code>TTY</code> &#x5C31;&#x4EE3;&#x8868;&#x6240;&#x5C5E;&#x7684;&#x7EC8;&#x7AEF;&#x3002;</p>
+</li>
+<li><p><strong>&#x4EFB;&#x52A1;&#xFF08;job&#xFF09;</strong>&#xFF1A;&#x6BCF;&#x4E2A;&#x4F1A;&#x8BDD;&#x90FD;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x524D;&#x53F0;&#x4EFB;&#x52A1;&#xFF0C;&#x591A;&#x4E2A;&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#x3002;&#x5982;&#x679C;&#x4F1A;&#x8BDD;&#x6240;&#x5C5E;&#x7684;&#x7EC8;&#x7AEF;&#x4E0D;&#x662F; <code>tty</code>&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x4F1A;&#x8BDD;&#x5173;&#x95ED;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6240;&#x6709;&#x7684; job &#x90FD;&#x4F1A;&#x63A5;&#x6536;&#x5230; <code>SIGHUP</code> &#x4FE1;&#x53F7;&#xFF0C;&#x5BFC;&#x81F4;&#x8FDB;&#x7A0B;&#x7EC8;&#x6B62;&#x3002;</p>
+</li>
+<li><pre><code class="lang-sh">&gt; ps
+PID TTY          TIME CMD
+241 pts/2    00:00:00 bash
+349 pts/2    00:00:00 ps
+</code></pre>
+</li>
+<li><p><strong>&#x524D;&#x53F0;&#xFF08;Foreground&#xFF09;</strong>&#xFF1A;&#x4F1A;&#x8BDD;&#x4EFB;&#x52A1;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x754C;&#x9762;&#x3002;&#x524D;&#x53F0;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x65F6;&#x4E0D;&#x80FD;&#x505A;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#xFF0C;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4FE1;&#x53F7;&#x5BF9;&#x4EFB;&#x52A1;&#x505A;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>Ctrl</code>+<code>c</code> &#x4E2D;&#x65AD;&#x8BE5;&#x4EFB;&#x52A1;&#xFF0C;&#x901A;&#x8FC7; <code>Ctrl</code>+<code>z</code> &#x6682;&#x505C;&#x8BE5;&#x4EFB;&#x52A1;&#x3002;</p>
+</li>
+<li><p><strong>&#x540E;&#x53F0;&#xFF08;Background&#xFF09;</strong>&#xFF1A;&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#x5141;&#x8BB8;&#x8BE5;&#x4F1A;&#x8BDD;&#x6267;&#x884C;&#x5176;&#x4ED6;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x547D;&#x4EE4;&#x6700;&#x540E;&#x52A0;&#x4E0A;&#x7A7A;&#x683C;&#x4E0E;<code>&amp;</code> &#x7B26;&#x53F7;&#xFF0C;&#x4F7F;&#x4EFB;&#x52A1;&#x8FDB;&#x5165;&#x540E;&#x53F0;&#x3002;</p>
+</li>
+</ul>
+<h3 id="&#x4EFB;&#x52A1;&#x7BA1;&#x7406;">&#x4EFB;&#x52A1;&#x7BA1;&#x7406;</h3>
+<h4 id="&#x540E;&#x53F0;&#x4EFB;&#x52A1;">&#x540E;&#x53F0;&#x4EFB;&#x52A1;</h4>
+<p>&#x5728;&#x5F53;&#x524D;&#x4F1A;&#x8BDD;&#x754C;&#x9762;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF08;&#x7761;&#x7720; 1 &#x5206;&#x949F;&#xFF09;&#xFF0C;&#x8868;&#x793A;&#x5F53;&#x524D;&#x8FDB;&#x7A0B;&#x5728;&#x524D;&#x53F0;&#x8FD0;&#x884C;&#xFF0C;&#x6B64;&#x65F6; Linux &#x4E0D;&#x63A5;&#x53D7;&#x9664;&#x4E2D;&#x65AD;&#x4FE1;&#x53F7;&#x4EE5;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-bash">sleep 1m
+</code></pre>
+<p>&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x7ACB;&#x523B;&#x6309;&#x4E0B; <strong><code>Ctrl</code>+<code>z</code>&#xFF0C;&#x4F1A;&#x5C06;&#x8BE5;&#x4EFB;&#x52A1;&#x653E;&#x5230;&#x540E;&#x53F0;&#x5E76;&#x6682;&#x505C;&#x4EFB;&#x52A1;&#x8FD0;&#x884C;</strong>&#x3002;</p>
+<p>&#x64CD;&#x4F5C;&#x540E;&#x663E;&#x793A;&#x5982;&#x4E0B;&#x3002;&#x5176;&#x4E2D;&#x7B2C;&#x4E8C;&#x884C;&#x7684;&#x6570;&#x5B57; <code>1</code> &#x8868;&#x793A;&#x4EFB;&#x52A1;&#x53F7;&#x3002;<code>+</code> &#x8868;&#x793A;&#x6B64;&#x4EFB;&#x52A1;&#x4E3A;&#x6700;&#x8FD1;&#x7684;&#x4E00;&#x4E2A;&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x662F; <code>-</code> &#x5219;&#x8868;&#x793A;&#x8FD9;&#x662F;&#x6700;&#x8FD1;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#xFF0C;&#x5982;&#x679C;&#x4EC0;&#x4E48;&#x90FD;&#x6CA1;&#x6709;&#x5219;&#x8868;&#x793A;&#x8FD9;&#x662F;&#x6700;&#x8FD1;&#x7684;&#x4E24;&#x4E2A;&#x4EE5;&#x5916;&#x7684;&#x4EFB;&#x52A1;&#x3002;<code>Stopped</code> &#x8868;&#x793A;&#x4EFB;&#x52A1;&#x7684;&#x72B6;&#x6001;&#x662F;&#x6682;&#x505C;&#xFF0C;<code>Running</code> &#x8868;&#x793A;&#x8FD0;&#x884C;&#x3002;&#x6700;&#x540E;&#x7684; <code>sleep 1m</code> &#x8868;&#x793A;&#x4EFB;&#x52A1;&#x540D;&#x3002;</p>
+<pre><code>^Z
+[1]+  Stopped                 sleep 1m
+#[&#x4EFB;&#x52A1;&#x53F7;][+|-] &#x4EFB;&#x52A1;&#x72B6;&#x6001;        &#x4EFB;&#x52A1;&#x5168;&#x540D;
+</code></pre><p>&#x6211;&#x4EEC;&#x518D;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">sleep 2m &amp;
+<span class="hljs-comment"># &#x663E;&#x793A;&#x5982;&#x4E0B;</span>
+[2] 405
+<span class="hljs-comment">#[&#x4EFB;&#x52A1;&#x53F7;] PID</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x5F53;&#x524D;&#x4F1A;&#x8BDD;&#x7684;&#x524D;&#x53F0;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x5176;&#x4ED6;&#x4EFB;&#x52A1;&#x3002;&#x663E;&#x793A;&#x7684;&#x4E24;&#x4E2A;&#x6570;&#x5B57;&#x5206;&#x522B;&#x4E3A;&#x4EFB;&#x52A1;&#x53F7;&#x548C;PID&#xFF08;&#x8FDB;&#x7A0B; ID&#xFF09;&#x3002;</p>
+<p><strong>&#x4F7F;&#x7528; <code>&amp;</code> &#x7B26;&#x53F7;&#x80FD;&#x8BA9;&#x8FDB;&#x7A0B;&#x5728;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x88AB; <code>Ctrl</code>+<code>c</code> &#x7EC8;&#x7ED3;&#x3002;</strong></p>
+<h4 id="jobs-&#x547D;&#x4EE4;"><code>jobs</code> &#x547D;&#x4EE4;</h4>
+<p>&#x63A5;&#x4E0A;&#x6587;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x6B64;&#x65F6;&#x8FD0;&#x884C; <code>jobs</code>&#xFF0C;&#x53EF;&#x4EE5;&#x5217;&#x51FA;&#x6240;&#x6709;&#x7684;&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">jobs</span>
+[1]+  Stopped                 sleep 1m
+[2]-  Running                 sleep 2m &amp;
+</code></pre>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;<code>jobs [-lrs]</code></p>
+<p><strong>&#x9009;&#x9879;</strong></p>
+<ul>
+<li><code>-l</code> &#x989D;&#x5916;&#x663E;&#x793A; PID</li>
+<li><code>-r</code> &#x4EC5;&#x663E;&#x793A;&#x8FD0;&#x884C;&#x7684;&#x4EFB;&#x52A1;</li>
+<li><code>-s</code> &#x4EC5;&#x663E;&#x793A;&#x6682;&#x505C;&#x7684;&#x4EFB;&#x52A1;</li>
+</ul>
+<h4 id="fg-&#x547D;&#x4EE4;"><code>fg</code> &#x547D;&#x4EE4;</h4>
+<ul>
+<li><code>fg</code> &#x628A;&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x653E;&#x5230;&#x524D;&#x53F0;&#x53BB;&#x6267;&#x884C;&#xFF08;&#x5373;&#x5E26; <code>+</code> &#x7684;&#x4EFB;&#x52A1;&#xFF09;&#x3002;</li>
+<li><code>fg -</code> &#x628A;&#x6700;&#x8FD1;&#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#x653E;&#x5230;&#x524D;&#x53F0;&#x53BB;&#x6267;&#x884C;&#xFF08;&#x5373;&#x5E26; <code>-</code> &#x7684;&#x4EFB;&#x52A1;&#xFF09;&#x3002;</li>
+<li><code>fg &lt;%job_number&gt;</code> &#x628A;&#x6307;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#x653E;&#x5230;&#x524D;&#x53F0;&#x53BB;&#x6267;&#x884C;&#xFF0C;&#x5176;&#x4E2D; <code>%</code> &#x662F;&#x53EF;&#x9009;&#x7684;&#x3002;</li>
+</ul>
+<pre><code class="lang-bash"><span class="hljs-built_in">fg</span> %1 <span class="hljs-comment"># &#x53D6;&#x4EFB;&#x52A1;&#x53F7;&#x4E3A; 1 &#x7684;&#x4EFB;&#x52A1;&#x53BB;&#x524D;&#x53F0;&#x6267;&#x884C;</span>
+</code></pre>
+<h4 id="bg-&#x547D;&#x4EE4;"><code>bg</code> &#x547D;&#x4EE4;</h4>
+<p><code>bg &lt;%job_number&gt;</code> &#x628A;&#x6307;&#x5B9A;&#x7684;&#x4EFB;&#x52A1;&#xFF08;&#x9700;&#x8981;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#x6CA1;&#x6709;&#x5728;&#x8FD0;&#x884C;&#xFF09;&#x653E;&#x5230;&#x540E;&#x53F0;&#x6267;&#x884C;&#x3002;</p>
+<h4 id="nohup-&#x547D;&#x4EE4;"><code>nohup</code> &#x547D;&#x4EE4;</h4>
+<p><code>nohup</code> &#x8868;&#x793A;&#x5728;&#x4F1A;&#x8BDD;&#x5173;&#x95ED;&#x65F6;&#xFF0C;&#x4E0D;&#x5BF9;&#x8BE5;&#x4EFB;&#x52A1;&#x8FDB;&#x884C;&#x6302;&#x8D77;&#x3002;&#x5426;&#x5219;&#x8BE5;&#x4EFB;&#x52A1;&#x53EF;&#x80FD;&#x56E0;&#x4E3A;&#x4F1A;&#x8BDD;&#x4E2D;&#x65AD;&#x53D1;&#x51FA;&#x7684; SIGHUP &#x4FE1;&#x53F7;&#x5BFC;&#x81F4;&#x4EFB;&#x52A1;&#x88AB;&#x7EC8;&#x7ED3;&#x3002;</p>
+<pre><code class="lang-bash">nohup sleep 3m
+</code></pre>
+<p>&#x4F46;&#x53EA;&#x4F7F;&#x7528; <code>nohup</code>&#xFF0C;&#x4EFB;&#x52A1;&#x80FD;&#x591F;&#x88AB; <code>Ctrl</code>+<code>c</code> &#x4E2D;&#x65AD;&#x3002;&#x53E6;&#x5916; nohup &#x4F1A;&#x9ED8;&#x8BA4;&#x5C06;&#x4EFB;&#x52A1;&#x7684;&#x8F93;&#x51FA;&#x5199;&#x5165;&#x5230;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6240;&#x5728;&#x4F4D;&#x7F6E;&#x7684; <code>nohup.out</code> &#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x4E00;&#x822C;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x4EE5;&#x4E0A;&#x4E24;&#x79CD;&#x95EE;&#x9898;&#xFF0C;&#x901A;&#x5E38;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x6267;&#x884C; <code>nohup</code> &#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code class="lang-bash">nohup sleep 3m &amp;&gt; /dev/null &amp;
+</code></pre>
+<h4 id="&#x4E0E;-nohup-&#x533A;&#x522B;"><code>&amp;</code> &#x4E0E; <code>nohup</code> &#x533A;&#x522B;</h4>
+<blockquote>
+<p>&#x8FD9;&#x91CC;&#x7684; <code>&amp;</code> &#x5355;&#x6307;&#x4E0E;&#x524D;&#x65B9;&#x547D;&#x4EE4;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x7A7A;&#x683C;&#xFF0C;&#x4E14;&#x653E;&#x5728;&#x547D;&#x4EE4;&#x6700;&#x540E;&#x7684;&#xFF0C;&#x7528;&#x4E8E;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#x3002;</p>
+</blockquote>
+<ul>
+<li><code>&amp;</code> &#x80FD;&#x8BA9;&#x4EFB;&#x52A1;&#x8FDB;&#x5165;&#x540E;&#x53F0;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x88AB; <code>Ctrl</code>+<code>c</code> &#x4E2D;&#x65AD;&#x3002;</li>
+<li><code>nohup</code> &#x4E0D;&#x4F1A;&#x8FDB;&#x5165;&#x540E;&#x53F0;&#xFF0C;&#x4F46;&#x80FD;&#x514D;&#x75AB;&#x4F1A;&#x8BDD;&#x5173;&#x95ED;&#x53D1;&#x51FA;&#x7684; <code>SIGHUP</code> &#x4FE1;&#x53F7;&#x3002;</li>
+</ul>
+<p>&#x901A;&#x5E38;&#x4F1A;&#x8FDE;&#x7528; <code>nohup</code> &#x548C; <code>&amp;</code> &#x540C;&#x65F6;&#x514D;&#x75AB; <code>Ctrl</code>+<code>c</code> &#x548C; <code>SIGHUP</code> &#x4FE1;&#x53F7;&#x3002;</p>
+<h4 id="&#x8BF7;&#x56DE;&#x7B54;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x7684;&#x5F02;&#x540C;">&#x8BF7;&#x56DE;&#x7B54;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x7684;&#x5F02;&#x540C;</h4>
+<pre><code class="lang-bash"><span class="hljs-built_in">command</span>
+<span class="hljs-built_in">command</span> &gt; /dev/null
+<span class="hljs-built_in">command</span> &gt; /dev/null 2&gt;&amp;1
+<span class="hljs-built_in">command</span> &amp;
+<span class="hljs-built_in">command</span> &gt; /dev/null &amp;
+<span class="hljs-built_in">command</span> &gt; /dev/null 2&gt;&amp;1 &amp;
+<span class="hljs-built_in">command</span> &amp;&gt; /dev/null
+nohup <span class="hljs-built_in">command</span> &amp;&gt; /dev/null
+nohup <span class="hljs-built_in">command</span> &amp;&gt; /dev/null &amp;
+</code></pre>
+<p><strong>&#x89E3;&#x7B54;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-built_in">command</span>                      <span class="hljs-comment"># &#x524D;&#x53F0;&#x6267;&#x884C;&#x547D;&#x4EE4;</span>
+<span class="hljs-built_in">command</span> &gt; /dev/null          <span class="hljs-comment"># &#x524D;&#x53F0;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4E22;&#x5F03;&#x6807;&#x51C6;&#x8F93;&#x51FA;</span>
+<span class="hljs-built_in">command</span> &gt; /dev/null 2&gt;&amp;1     <span class="hljs-comment"># &#x524D;&#x53F0;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4E22;&#x5F03;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF0C;&#x9519;&#x8BEF;&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;</span>
+<span class="hljs-built_in">command</span> &amp;                     <span class="hljs-comment"># &#x540E;&#x53F0;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4F46;&#x4ECD;&#x663E;&#x793A;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x548C;&#x9519;&#x8BEF;&#x8F93;&#x51FA;</span>
+<span class="hljs-built_in">command</span> &gt; /dev/null &amp;         <span class="hljs-comment"># &#x540E;&#x53F0;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4E22;&#x5F03;&#x6807;&#x51C6;&#x8F93;&#x51FA;</span>
+<span class="hljs-built_in">command</span> &gt; /dev/null 2&gt;&amp;1 &amp;     <span class="hljs-comment"># &#x540E;&#x53F0;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4E22;&#x5F03;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#xFF0C;&#x9519;&#x8BEF;&#x8F93;&#x51FA;&#x91CD;&#x5B9A;&#x5411;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x51FA;</span>
+<span class="hljs-built_in">command</span> &amp;&gt; /dev/null         <span class="hljs-comment"># &#x524D;&#x53F0;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4E22;&#x5F03;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x548C;&#x9519;&#x8BEF;&#x8F93;&#x51FA;&#x3002;&#x7B49;&#x540C;&#x4E8E; command &gt; /dev/null 2&gt;&amp;1</span>
+nohup <span class="hljs-built_in">command</span> &amp;&gt; /dev/null     <span class="hljs-comment"># &#x524D;&#x53F0;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4E22;&#x5F03;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x548C;&#x9519;&#x8BEF;&#x8F93;&#x51FA;&#xFF0C;&#x4F46;&#x4E0D;&#x6302;&#x8D77;&#xFF08;hugup&#xFF09;&#x4EFB;&#x52A1;</span>
+nohup <span class="hljs-built_in">command</span> &amp;&gt; /dev/null &amp; <span class="hljs-comment"># &#x540E;&#x53F0;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF0C;&#x4E22;&#x5F03;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x548C;&#x9519;&#x8BEF;&#x8F93;&#x51FA;&#xFF0C;&#x4F46;&#x4E0D;&#x6302;&#x8D77;&#xFF08;hugup&#xFF09;&#x4EFB;&#x52A1;</span>
+</code></pre>
+<h4 id="kill---&#x7EC8;&#x6B62;&#x8FDB;&#x7A0B;"><code>kill</code> - &#x7EC8;&#x6B62;&#x8FDB;&#x7A0B;</h4>
+<p><strong>&#x8BED;&#x6CD5;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-built_in">kill</span> [<span class="hljs-_">-s</span> sigspec | -n signum | -sigspec]  &lt; pid | jobspec &gt; [...]
+</code></pre>
+<ul>
+<li><code>signum</code> &#x8868;&#x793A;&#x4FE1;&#x53F7;&#x6570;&#x503C;</li>
+<li><code>signame</code> &#x8868;&#x793A;&#x4FE1;&#x53F7;&#x540D;</li>
+<li><code>sigspec</code> &#x8868;&#x793A; <code>signum</code> &#x6216; <code>signame</code></li>
+</ul>
+<p><strong>kill &#x5E38;&#x7528;&#x4FE1;&#x53F7;</strong></p>
+<p><code>kill -l</code> &#x5217;&#x51FA; <code>kill</code> &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x53D1;&#x51FA;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x53F7;&#x3002;</p>
+<ul>
+<li>15) SIGTERM &#x9ED8;&#x8BA4;&#x4FE1;&#x53F7;&#x3002;<code>kill -15 &lt;PID&gt;</code> &#x7B49;&#x540C;&#x4E8E; <code>kill &lt;PID&gt;</code>&#x3002;</li>
+<li>9) SIGKILL &#x5F3A;&#x5236;&#x4E2D;&#x65AD;&#x65B0;&#x6821;&#x3002;&#x8BE5;&#x4FE1;&#x53F7;&#x4F1A;&#x5F3A;&#x5236;&#x6740;&#x6B7B;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#x3002;</li>
+<li>1) SIGHUP &#x4F1A;&#x8BDD;&#x5173;&#x95ED;&#x4F1A;&#x53D1;&#x51FA;&#x6B64;&#x4FE1;&#x53F7;&#x3002;</li>
+<li>2) SIGINT &#x4E2D;&#x65AD;&#x4FE1;&#x53F7;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; <code>Ctrl</code>+<code>c</code></li>
+<li>19) SIGSTOP &#x6682;&#x505C;&#x4FE1;&#x53F7;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; <code>Ctrl</code>+<code>z</code></li>
+</ul>
+<p>&#x4E0A;&#x8FF0;&#x5185;&#x5BB9;&#x4E2D;&#xFF0C;&#x5982; <code>15) SIGTERM</code>&#xFF0C;&#x6570;&#x5B57;&#x4EE3;&#x8868; <code>signum</code>&#xFF0C;&#x5B57;&#x6BCD;&#x4EE3;&#x8868; <code>signame</code></p>
+<p><strong>&#x793A;&#x4F8B;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-built_in">kill</span> 1234 <span class="hljs-comment"># &#x4F7F;&#x7528; SIGTERM &#x7EC8;&#x7ED3; pid &#x4E3A; 1234 &#x7684;&#x8FDB;&#x7A0B;</span>
+<span class="hljs-built_in">kill</span> -9 1234 <span class="hljs-comment"># &#x4F7F;&#x7528; SIGKILL &#x7EC8;&#x7ED3; pid &#x4E3A; 1234 &#x7684;&#x8FDB;&#x7A0B;</span>
+<span class="hljs-built_in">kill</span> -SIGTERM %1 <span class="hljs-comment"># &#x4F7F;&#x7528; SIGTERM &#x7EC8;&#x7ED3;&#x4EFB;&#x52A1;&#x53F7;&#x4E3A; 1 &#x7684;&#x4EFB;&#x52A1;</span>
+</code></pre>
+<p><strong>&#x884D;&#x751F;&#x547D;&#x4EE4;&#xFF08;&#x8BF7;&#x81EA;&#x884C;&#x4E86;&#x89E3;&#xFF09;</strong></p>
+<ul>
+<li>killall</li>
+<li>pkill</li>
+<li>xkill  &#x56FE;&#x5F62;&#x754C;&#x9762;&#x7EC8;&#x6B62;&#x8FDB;&#x7A0B;&#x547D;&#x4EE4;</li>
+</ul>
+<h3 id="&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;">&#x8FDB;&#x7A0B;&#x7BA1;&#x7406;</h3>
+<h4 id="ps---&#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#xFF08;process-status&#xFF09;"><code>ps</code> - &#x67E5;&#x770B;&#x8FDB;&#x7A0B;&#xFF08;Process Status&#xFF09;</h4>
+<p><strong>&#x8BED;&#x6CD5;</strong>&#xFF1A;<code>ps [options]</code></p>
+<p><strong>&#x9009;&#x9879;</strong></p>
+<ul>
+<li><code>-A,</code> <code>-e</code>      &#x6240;&#x6709;&#x8FDB;&#x7A0B;</li>
+<li><code>a</code>                   &#x5305;&#x62EC; tty &#x5217;&#x548C;&#x5176;&#x4ED6;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x5728;&#x5185;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;</li>
+<li><code>-l</code>                 &#x663E;&#x793A;&#x5F53;&#x524D; bash &#x542F;&#x52A8;&#x7684;&#x8FDB;&#x7A0B;</li>
+<li><code>r</code>                   only running processes</li>
+<li><code>T</code>                   all processes on this terminal</li>
+<li><code>u</code>                   &#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x6240;&#x5C5E;&#x7528;&#x6237;&#x540D;&#x53CA;CPU&#x3001;&#x5185;&#x5B58;&#x5360;&#x7528;</li>
+<li><code>x</code>                   processes without controlling ttys</li>
+</ul>
+<p><strong>&#x5E38;&#x7528;&#x7EC4;&#x5408;</strong></p>
+<p>ps &#x7531;&#x4E8E;&#x5386;&#x53F2;&#x539F;&#x56E0;&#xFF0C;&#x5B58;&#x5728;&#x591A;&#x79CD;&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#x3002;&#x6BD4;&#x5982; <code>ps -ef</code> &#x8FD9;&#x6837;&#x7684;&#x77ED;&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#xFF0C;&#x6BD4;&#x5982; <code>ps aux</code> &#x8FD9;&#x6837;&#x7684;&#x683C;&#x5F0F;&#x7B49;&#xFF0C;&#x800C;&#x4E14;&#x7531;&#x4E8E;&#x547D;&#x4EE4;&#x7684;&#x9009;&#x9879;&#x5341;&#x5206;&#x7E41;&#x591A;&#x590D;&#x6742;&#xFF0C;&#x6240;&#x4EE5;&#x5927;&#x5BB6;&#x53EA;&#x8981;&#x4ECE;&#x4EE5;&#x4E0B;&#x7EC4;&#x5408;&#x4E2D;&#x8BB0;&#x4E00;&#x4E9B;&#x5373;&#x53EF;&#x3002;</p>
+<p><code>ps -l</code> &#x4EC5;&#x67E5;&#x770B;&#x5F53;&#x524D; bash &#x542F;&#x52A8;&#x7684;&#x8FDB;&#x7A0B;</p>
+<p><code>ps -lA</code> &#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x6240;&#x6709;&#x8FDB;&#x7A0B;</p>
+<p><code>ps aux</code> &#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x6240;&#x6709;&#x8FDB;&#x7A0B;</p>
+<p><code>ps -ef</code> &#x67E5;&#x770B;&#x7CFB;&#x7EDF;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#xFF08;&#x76F8;&#x6BD4;&#x524D;&#x4E24;&#x8005;&#xFF0C;&#x7F3A;&#x5C11; CPU &#x548C;&#x5185;&#x5B58;&#x5217;&#x7684;&#x663E;&#x793A;&#xFF09;</p>
+<p><code>ps axjf</code> &#x4EE5;&#x8FDB;&#x7A0B;&#x6811;&#x7684;&#x65B9;&#x5F0F;&#x663E;&#x793A;&#xFF08;&#x4E0E; pstree &#x529F;&#x80FD;&#x76F8;&#x4F3C;&#xFF09;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;</p>
+<pre><code>PPID   PID  PGID   SID TTY      TPGID STAT   UID   TIME COMMAND
+0     1     0     0 ?           -1 Sl       0   0:00 /init
+1   206   206   206 ?           -1 Ss       0   0:00 /init
+206   207   206   206 ?           -1 S        0   0:00  \_ /init
+207   208   208   208 pts/0      208 Ssl+  1000   0:03  |   \_ docker serve --address unix:///home/super9du/.docker/ru
+206   209   206   206 ?           -1 Z        0   0:00  \_ [init] &lt;defunct&gt;
+206   211   206   206 ?           -1 S        0   0:00  \_ /init
+211   212   212   212 pts/1      212 Ssl+     0   0:02      \_ /mnt/wsl/docker-desktop/docker-desktop-proxy --distro-n
+1   239   239   239 ?           -1 Ss       0   0:00 /init
+239   240   239   239 ?           -1 S        0   0:00  \_ /init
+240   241   241   241 pts/2      460 Ss    1000   0:00      \_ -bash
+241   460   460   241 pts/2      460 R+    1000   0:00          \_ ps axjf
+</code></pre><p><strong>ps &#x8F93;&#x51FA;&#x7684;&#x8868;&#x5934;&#x53CA;&#x5176;&#x542B;&#x4E49;</strong></p>
+<ul>
+<li>S          &#x8FDB;&#x7A0B;&#x72B6;&#x6001;<ul>
+<li>R&#xFF08;Running&#xFF09;&#xFF1A;&#x8FD0;&#x884C;&#x4E2D;&#x3002;</li>
+<li>S&#xFF08;Sleep&#xFF09;&#xFF1A;&#x7761;&#x7720;&#x3002;</li>
+<li>D&#xFF1A;&#x4E0D;&#x53EF;&#x5524;&#x9192;&#x7684;&#x7761;&#x7720;&#x3002;&#x901A;&#x5E38;&#x53EF;&#x80FD;&#x662F;&#x5728;&#x7B49;&#x5F85; I/O</li>
+<li>T&#xFF1A;&#x505C;&#x6B62;&#x3002;&#x53EF;&#x80FD;&#x662F;&#x5728;&#x540E;&#x53F0;&#x6682;&#x505C;&#x6216;&#x8DDF;&#x8E2A;&#xFF08;traced&#xFF09;&#x72B6;&#x6001;</li>
+<li>Z&#xFF08;Zombie&#xFF09;&#xFF1A;&#x50F5;&#x5C38;&#x72B6;&#x6001;&#x3002;&#x8FDB;&#x7A0B;&#x7EC8;&#x6B62;&#x4F46;&#x65E0;&#x6CD5;&#x88AB;&#x4ECE;&#x5185;&#x5B58;&#x4E2D;&#x79FB;&#x9664;</li>
+</ul>
+</li>
+<li>UID      &#x4F7F;&#x7528;&#x7528;&#x6237;</li>
+<li>PID      &#x8FDB;&#x7A0B; id</li>
+<li>PPID    &#x8FDB;&#x7A0B;&#x7684;&#x7236;&#x8FDB;&#x7A0B;</li>
+<li>C           CPU&#x5360;&#x7528;&#x767E;&#x5206;&#x6BD4;</li>
+<li>SZ        &#x5185;&#x5B58;&#x5360;&#x7528;</li>
+<li>WATCH &#x8FDB;&#x7A0B;&#x662F;&#x5426;&#x8FD0;&#x884C;&#x3002;<code>-</code> &#x4EE3;&#x8868;&#x6B63;&#x5728;&#x8FD0;&#x884C;</li>
+<li>TTY      &#x8FDB;&#x7A0B;&#x4F7F;&#x7528;&#x7684;&#x7EC8;&#x7AEF;&#x3002;&#xFF1F;&#x8868;&#x793A;&#x4E0D;&#x5360;&#x7528;&#x7EC8;&#x7AEF;</li>
+<li>STIME  &#x8868;&#x793A;&#x8FDB;&#x7A0B;&#x5F00;&#x59CB;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x95F4;</li>
+<li>TIME    &#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#x6301;&#x7EED;&#x7684;&#x65F6;&#x95F4;</li>
+<li>CMD     &#x8FDB;&#x7A0B;&#x5BF9;&#x5E94;&#x7684;&#x7A0B;&#x5E8F;&#x540D;</li>
+<li>STAT     &#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#xFF08;&#x7B49;&#x540C;&#x4E8E; S &#x5217;&#xFF09;</li>
+<li>RSS       &#x5B9E;&#x9645;&#x5185;&#x5B58;&#x5360;&#x7528;</li>
+<li>%CPU  CPU&#x5360;&#x7528;&#x767E;&#x5206;&#x6BD4;&#xFF08;&#x7B49;&#x540C;&#x4E8E; C &#x5217;&#xFF09;</li>
+<li>%MEM  &#x5185;&#x5B58;&#x5360;&#x7528;&#x767E;&#x5206;&#x6BD4;</li>
+</ul>
+<h4 id="top-&#x547D;&#x4EE4;"><code>top</code> &#x547D;&#x4EE4;</h4>
+<p><strong>&#x8BED;&#x6CD5;&#xFF1A;</strong><code>top [&#x9009;&#x9879;]</code></p>
+<p><strong>&#x9009;&#x9879;</strong></p>
+<ul>
+<li><code>-b</code>&#xFF1A;&#x4EE5;&#x6279;&#x5904;&#x7406;&#x6A21;&#x5F0F;&#x64CD;&#x4F5C;&#xFF1B;</li>
+<li><code>-c</code>&#xFF1A;&#x663E;&#x793A;&#x5B8C;&#x6574;&#x7684;&#x547D;&#x4EE4;&#xFF1B;</li>
+<li><code>-d</code>&#xFF1A;&#x5C4F;&#x5E55;&#x5237;&#x65B0;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D; s&#xFF1B;</li>
+<li><code>-i&lt;&#x65F6;&#x95F4;&gt;</code>&#xFF1A;&#x8BBE;&#x7F6E;&#x95F4;&#x9694;&#x65F6;&#x95F4;&#xFF1B;</li>
+<li><code>-u&lt;&#x7528;&#x6237;&#x540D;&gt;</code>&#xFF1A;&#x6307;&#x5B9A;&#x7528;&#x6237;&#x540D;&#xFF1B;</li>
+<li><code>-p&lt;&#x8FDB;&#x7A0B;&#x53F7;&gt;</code>&#xFF1A;&#x6307;&#x5B9A;&#x8FDB;&#x7A0B;&#xFF1B;</li>
+<li><code>-n&lt;&#x6B21;&#x6570;&gt;</code>&#xFF1A;&#x5FAA;&#x73AF;&#x663E;&#x793A;&#x7684;&#x6B21;&#x6570;&#x3002;</li>
+</ul>
+<p><strong><code>top</code> &#x4EA4;&#x4E92;&#x547D;&#x4EE4;</strong></p>
+<ul>
+<li>h &#x6216;&#x8005; ?&#xFF1A;&#x663E;&#x793A;&#x5E2E;&#x52A9;&#x753B;&#x9762;&#xFF0C;&#x7ED9;&#x51FA;&#x4E00;&#x4E9B;&#x7B80;&#x77ED;&#x7684;&#x547D;&#x4EE4;&#x603B;&#x7ED3;&#x8BF4;&#x660E;&#xFF1B;</li>
+<li>q&#xFF1A;&#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#xFF1B;</li>
+<li>k&#xFF1A;&#x7EC8;&#x6B62;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF1B;</li>
+<li>E&#xFF1A;&#x5207;&#x6362;&#x7B2C;&#x56DB;&#x3001;&#x4E94;&#x884C;&#x5185;&#x5B58;&#x663E;&#x793A;&#x5355;&#x4F4D;</li>
+<li>e&#xFF1A;&#x5207;&#x6362;&#x8868;&#x683C;&#x5185;&#x5B58;&#x663E;&#x793A;&#x5355;&#x4F4D;</li>
+<li>c&#xFF1A;&#x5207;&#x6362;&#x663E;&#x793A;&#x547D;&#x4EE4;&#x540D;&#x79F0;&#x548C;&#x5B8C;&#x6574;&#x547D;&#x4EE4;&#x884C;&#xFF1B;</li>
+<li>M&#xFF1A;&#x6839;&#x636E;&#x9A7B;&#x7559;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF1B;</li>
+<li>m&#xFF1A;&#x5207;&#x6362;&#x663E;&#x793A;&#x5185;&#x5B58;&#x4FE1;&#x606F;&#xFF1B;</li>
+<li>P&#xFF1A;&#x6839;&#x636E;CPU&#x4F7F;&#x7528;&#x767E;&#x5206;&#x6BD4;&#x5927;&#x5C0F;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF1B;</li>
+<li>t&#xFF1A;&#x5207;&#x6362;&#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x548C;CPU&#x72B6;&#x6001;&#x4FE1;&#x606F;&#xFF1B;</li>
+</ul>
+<p><strong>&#x8F93;&#x51FA;&#x89E3;&#x8BFB;</strong></p>
+<p>&#x7B2C;&#x4E00;&#x884C;&#xFF1A;top - &#x73B0;&#x5728;&#x65F6;&#x95F4; &#x542F;&#x52A8;&#x65F6;&#x95F4;&#xFF0C;&#x767B;&#x9646;&#x7528;&#x6237;&#x6570;&#xFF0C;&#x5E73;&#x5747;&#x8D1F;&#x8F7D;&#xFF1A;1&#x5206;&#x949F;&#x5E73;&#x5747;&#xFF0C;5&#x5206;&#x949F;&#x5E73;&#x5747;&#xFF0C;15&#x5206;&#x949F;&#x5E73;&#x5747;</p>
+<p>&#x7B2C;&#x4E8C;&#x884C;&#xFF1A;Tasks&#xFF1A;&#x8FDB;&#x7A0B;&#x603B;&#x6570;&#xFF0C;&#x8FD0;&#x884C;&#x72B6;&#x6001;</p>
+<p>&#x7B2C;&#x4E09;&#x884C;&#xFF1A;%Cpu(s)&#xFF1A;(us)&#x7528;&#x6237;&#x7A7A;&#x95F4;CPU&#x5360;&#x7528;&#x767E;&#x5206;&#x6BD4;&#xFF0C;(sy)&#x5185;&#x6838;&#x7A7A;&#x95F4;CPU&#x5360;&#x7528;&#x767E;&#x5206;&#x6BD4;&#xFF0C;(ni)&#x7701;&#x7565;&#xFF0C;(id)&#x7A7A;&#x95F2;CPU&#x5360;&#x7528;&#x767E;&#x5206;&#x6BD4;(idle)&#xFF0C;(wa)&#x7B49;&#x5F85;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x7684;CPU&#x65F6;&#x95F4;&#x5360;&#x7528;&#x767E;&#x5206;&#x6BD4;&#xFF0C;&#x7701;&#x7565;&#x2026;&#x2026;</p>
+<p>&#x7B2C;&#x56DB;&#x3001;&#x4E94;&#x884C;&#xFF1A;&#x5185;&#x5B58;&#x3001;&#x4EA4;&#x6362;&#x7A7A;&#x95F4;&#x5360;&#x7528;&#xFF0C;&#x5355;&#x4F4D;kb</p>
+<p>&#x8868;&#x5934;&#xFF1A;</p>
+<ul>
+<li>PR&#xFF1A;&#x8FDB;&#x7A0B;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x8D8A;&#x5C0F;&#x8D8A;&#x65E9;&#x88AB;&#x6267;&#x884C;</li>
+<li>NI&#xFF1A;Nice&#x503C;&#xFF0C;&#x8D8A;&#x5C0F;&#x8D8A;&#x65E9;&#x88AB;&#x6267;&#x884C;</li>
+<li>RES&#xFF1A;&#x8FDB;&#x7A0B;&#x5185;&#x5B58;&#x5360;&#x7528;&#xFF0C;&#x5355;&#x4F4D;kb&#xFF08;&#x6309;&#x5B57;&#x6BCD; e &#x5207;&#x6362;&#x5355;&#x4F4D;&#x5927;&#x5C0F;&#xFF09;</li>
+<li>S&#xFF1A;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;</li>
+</ul>
+<h4 id="&#x5176;&#x4ED6;&#x547D;&#x4EE4;">&#x5176;&#x4ED6;&#x547D;&#x4EE4;</h4>
+<ul>
+<li><code>htop</code>&#xFF1A;&#x7ED9;&#x4EBA;&#x770B;&#x7684; <code>top</code> &#x547D;&#x4EE4;</li>
+<li><code>fuser</code>&#xFF1A;&#x901A;&#x8FC7;&#x6587;&#x4EF6;&#x627E;&#x5230;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x8BE5;&#x6587;&#x4EF6;&#x7684;&#x8FDB;&#x7A0B;&#xFF08;file&apos;s user&#xFF0C;&#x6587;&#x4EF6;&#x7684;&#x4F7F;&#x7528;&#x8005;&#xFF09;</li>
+<li><code>lsof</code>&#xFF1A;&#x5217;&#x51FA;&#x88AB;&#x8FDB;&#x7A0B;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x6587;&#x4EF6;&#x540D;&#xFF08;<code>ls</code> &#x5217;&#x51FA;&#x6587;&#x4EF6;&#xFF0C;<code>lsof</code> &#x5217;&#x51FA;&#x8FDB;&#x7A0B;&#x7684;&#x6587;&#x4EF6;&#xFF09;</li>
+<li><code>pidof</code>&#xFF1A;&#x627E;&#x51FA;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#x7684; PID</li>
+</ul>
+<h3 id="proc-&#x76EE;&#x5F55;"><code>/proc</code> &#x76EE;&#x5F55;</h3>
+<p>proc &#x5373; process&#xFF08;&#x8FDB;&#x7A0B;&#xFF09;&#x7684;&#x7F29;&#x5199;&#x3002;&#x5728; Unix &#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x8BBE;&#x8BA1;&#x54F2;&#x5B66;&#x53EB;&#x505A;&#xFF1A;&#x300C;&#x4E00;&#x5207;&#x7686;&#x6587;&#x4EF6;&#x300D;&#x3002;&#x78C1;&#x76D8;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6302;&#x8F7D;&#x5728;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5149;&#x9A71;&#x3001;U&#x76D8;&#x3001;&#x9F20;&#x6807;&#x3001;&#x952E;&#x76D8;&#x7B49;&#x90FD;&#x53EF;&#x4EE5;&#x6302;&#x8F7D;&#x5728;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x4ED6;&#x4EEC;&#x90FD;&#x53EF;&#x4EE5;&#x62BD;&#x8C61;&#x4E3A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x63CF;&#x8FF0;&#x3002;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5BF9;&#x78C1;&#x76D8;&#x3001;&#x5149;&#x9A71;&#x3001;U&#x76D8;&#x7B49;&#x8BBE;&#x5907;&#x7684;&#x8BFB;&#x5199;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;Linux &#x4EA6;&#x5982;&#x6B64;&#x3002;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x8FDB;&#x7A0B;&#x4FE1;&#x606F;&#x4E5F;&#x4F1A;&#x88AB;&#x6620;&#x5C04;&#x4E3A;&#x6587;&#x4EF6;&#x3002;<code>/proc</code> &#x76EE;&#x5F55;&#x4E0B;&#x5C31;&#x662F;&#x8FDB;&#x7A0B;&#x4FE1;&#x606F;&#x7684;&#x6620;&#x5C04;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x542F;&#x52A8;&#x4E86;&#xFF0C;&#x5047;&#x8BBE;&#x4ED6;&#x7684; PID &#x4E3A; 1&#xFF0C;&#x90A3;&#x4E48;&#x4ED6;&#x5728; <code>/proc</code> &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x4F4D;&#x7F6E;&#x5C31;&#x662F; <code>/proc/1</code>&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F7F;&#x7528; <code>ls -l /proc/1</code>&#xFF0C;&#x4F1A;&#x53D1;&#x73B0;&#x4E0B;&#x9762;&#x6709;&#x5F88;&#x591A;&#x6587;&#x4EF6;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code>dr-xr-xr-x  2 super9du super9du 0 Dec  9 22:31 attr
+-r--------  1 super9du super9du 0 Dec  9 22:31 auxv
+-r--r--r--  1 super9du super9du 0 Dec  9 22:31 cgroup
+--w-------  1 super9du super9du 0 Dec  9 22:31 clear_refs
+-r--r--r--  1 super9du super9du 0 Dec  9 22:17 cmdline
+-rw-r--r--  1 super9du super9du 0 Dec  9 22:31 comm
+-rw-r--r--  1 super9du super9du 0 Dec  9 22:31 coredump_filter
+-r--r--r--  1 super9du super9du 0 Dec  9 22:31 cpuset
+lrwxrwxrwx  1 super9du super9du 0 Dec  9 22:31 cwd -&gt; /home/super9du
+-r--------  1 super9du super9du 0 Dec  9 22:31 environ
+lrwxrwxrwx  1 super9du super9du 0 Dec  9 22:31 exe -&gt; /usr/bin/bash
+&#xB7;&#xB7;&#xB7;&#xFF08;&#x7701;&#x7565;&#xFF09;&#xB7;&#xB7;&#xB7;
+</code></pre><p> &#x5176;&#x4E2D;</p>
+<ul>
+<li>cmdline &#x662F;&#x8FDB;&#x7A0B;&#x88AB;&#x542F;&#x52A8;&#x7684;&#x547D;&#x4EE4;&#xFF08;&#x6267;&#x884C; <code>cat /proc/1/cmdline</code> &#x8BD5;&#x8BD5;&#xFF09;</li>
+<li>cwd &#x662F;&#x547D;&#x4EE4;&#x7684;&#x5DE5;&#x4F5C;&#x76EE;&#x5F55;&#xFF08;cwd &#x5373; cmd work directory&#xFF09;</li>
+<li>environ &#x662F;&#x8FD9;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5185;&#x5BB9;</li>
+</ul>
+<p>&#x5728; <code>/proc</code> &#x76EE;&#x5F55;&#x4E0B;&#x6587;&#x4EF6;&#x8FD8;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5230;&#x7CFB;&#x7EDF;&#x76F8;&#x5173;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x7B80;&#x5355;&#x5217;&#x51FA;&#x4E00;&#x4E9B;&#x5BF9;&#x7167;&#x5173;&#x7CFB;&#xFF08;&#x5982;&#x6709;&#x5174;&#x8DA3;&#x81EA;&#x884C;&#x641C;&#x7D22;&#x6216;&#x53BB;&#x300C;&#x300A;&#x9E1F;&#x54E5;&#x7684;Linux&#x79C1;&#x623F;&#x83DC;&#x300B;&#x7B2C;16&#x7AE0;&#x300D;&#x67E5;&#x627E;&#xFF09;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6587;&#x4EF6;&#x540D;</th>
+<th>&#x6587;&#x4EF6;&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/proc/cmdline</td>
+<td>&#x52A0;&#x8F7D;&#x5185;&#x6838;&#x65F6;&#x6267;&#x884C;&#x7684;&#x76F8;&#x5173;&#x547D;&#x4EE4;&#x4E0E;&#x53C2;&#x6570;</td>
+</tr>
+<tr>
+<td>/proc/cpuinfo</td>
+<td>&#x672C;&#x673A; CPU &#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF08;&#x9891;&#x7387;&#x3001;&#x7C7B;&#x578B;&#x3001;&#x529F;&#x80FD;&#x7B49;&#xFF09;</td>
+</tr>
+<tr>
+<td>/proc/meminfo</td>
+<td>&#x5185;&#x5B58;&#x4FE1;&#x606F;&#xFF0C;&#x5373; <code>free</code> &#x547D;&#x4EE4;&#x7684;&#x5185;&#x5BB9;</td>
+</tr>
+<tr>
+<td>/proc/version</td>
+<td>&#x5185;&#x6838;&#x7248;&#x672C;&#x4FE1;&#x606F;&#xFF0C;&#x5373; <code>uname -a</code> &#x663E;&#x793A;&#x7684;&#x5185;&#x5BB9;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h3>
+<ol>
+<li>&#x300A;&#x9E1F;&#x54E5;&#x7684;Linux&#x79C1;&#x623F;&#x83DC;&#x300B;&#x7B2C;16&#x7AE0;</li>
+<li><a href="https://www.icourse163.org/course/NBCC-437004?tid=1002729007" target="_blank">&#x4E2D;&#x56FD;&#x5927;&#x5B66;&#x6155;&#x8BFE;-Linux&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;</a> &#x89C6;&#x9891;&#x6559;&#x7A0B;</li>
+<li><a href="https://man.linuxde.net/" target="_blank">Linux&#x547D;&#x4EE4;&#x5927;&#x5168;</a>&#x7F51;&#x7AD9;&#x2014;&#x2014;top &#x547D;&#x4EE4;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="part8-software-management.html" class="navigation navigation-prev " aria-label="Previous page: 第八章：软件管理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="part10-resource-management.html" class="navigation navigation-next " aria-label="Next page: 第十章：资源管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第九章：进程管理","level":"2.9","depth":1,"next":{"title":"第十章：资源管理","level":"2.10","depth":1,"path":"part10-resource-management.md","ref":"part10-resource-management.md","articles":[]},"previous":{"title":"第八章：软件管理","level":"2.8","depth":1,"path":"part8-software-management.md","ref":"part8-software-management.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part9-process-management.md","mtime":"2020-12-13T10:05:46.036Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-16T15:33:38.359Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
