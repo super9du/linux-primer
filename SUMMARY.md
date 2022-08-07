@@ -16,6 +16,7 @@
 * [第十章：资源管理](part10-resource-management.md)
 * [第十一章：服务与安全](part11-daemon-and-security.md)
 * [第十二章：远程维护](part12-remote.md)
+* [第十三章：最佳实践](part13-practice.md)
 * [附录：名词参考](terms.md)
 
 ---

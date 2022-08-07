@@ -1,4 +1,4 @@
-## 八）软件管理
+## 软件管理
 
 Linux 包管理工具主要分为两类：**dpkg** 和 **rpm**。dpkg 属于debian 系的默认包管理工具，比如 ubuntu 使用的就是 dpkg；rpm 属于 redhat 系的包管理工具，比如 CentOS 使用的就是 dpkg。apt-get 是 dpkg 的在线升级命令；yum 是 rpm 的在线升级命令。
 

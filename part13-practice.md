@@ -1,4 +1,4 @@
-## 十三）最佳实践
+## 最佳实践
 
 恭喜你已经学完了，但是请不要放弃。你需要通过实践熟练所学的 Linux 命令，因此请你完成下文所有的部署任务。有些没有链接，需要你自己搜索。
 
@@ -14,5 +14,5 @@
 <table>
     <tr><td><strong>广告：你可能需要一台自己的远程服务器（每月 8 块多）</strong></td></tr>
 </table>
-<a href="https://curl.qcloud.com/iTI9549b">![image-20201213232918801](part13-practice.assets/image-20201213232918801.png)</a>
+<a href="https://curl.qcloud.com/iTI9549b">![image-20201213232918801](assets/image-20201213232918801.png)</a>
 
