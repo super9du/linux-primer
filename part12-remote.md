@@ -3,8 +3,7 @@
 <table>
     <tr><td><strong>广告：在此之前，你可能需要一台自己的远程服务器（每月 8 块多）</strong></td></tr>
 </table>
-
-<a href="https://curl.qcloud.com/iTI9549b">![image-20201213232918801](part12-remote.assets/image-20201213232918801.png)</a>
+<a href="https://curl.qcloud.com/iTI9549b">![image-20201213232918801](assets/image-20201213232918801.png)</a>
 
 ### 远程软件
 
@@ -18,11 +17,11 @@
 
 **下载上述软件**
 
-<table>
-    <tr><td><pre>链接：https://pan.baidu.com/s/17_-Oi_bmAhD7zYufl_stYQ 
+```
+链接：https://pan.baidu.com/s/17_-Oi_bmAhD7zYufl_stYQ 
 提取码：vamj 
-复制这段内容后打开百度网盘手机App，操作更方便哦</pre></td></tr>
-</table>
+复制这段内容后打开百度网盘手机App，操作更方便哦
+```
 
 ### 远程登陆
 

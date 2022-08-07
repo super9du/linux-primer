@@ -1,0 +1,74 @@
+{
+    "title": "Linux 不入门到入门",
+    "auther": "super9du",
+    "plugins": [
+        "theme-lou",
+        "-sharing",
+        "-lunr",
+        "-search",
+        "search-plus",
+        "github",
+        "github-buttons",
+        "edit-link"
+    ],
+    "pluginsConfig": {
+        "theme-lou": {
+            "color": "#FF4848",
+            "favicon": "static/favicon.ico",
+            "logo": "static/logo.png",
+            "forbidCopy": false,
+            "search-placeholder": "点击搜索",
+            "book-summary-title": "目录",
+            "hide-elements": [
+                ".summary .gitbook-link"
+            ],
+            "copyright": {
+                "author": "super9du"
+            }
+        },
+        "github": {
+            "url": "https://github.com/super9du/linux-primer"
+        },
+        "github-buttons": {
+            "buttons": [
+                {
+                    "user": "super9du",
+                    "repo": "linux-primer",
+                    "type": "star",
+                    "size": "small"
+                }
+            ]
+        },
+        "edit-link": {
+            "base": "https://github.com/super9du/linux-primer/blob/main",
+            "label": "编辑"
+        }
+    },
+    "variables": {
+        "themeLou": {
+            "nav": [
+                {
+                    "target": "_blank",
+                    "url": "https://github.com/super9du/linux-primer",
+                    "name": "Github"
+                },
+                {
+                    "target": "_blank",
+                    "url": "https://gitee.com/super9du/linux-primer",
+                    "name": "Gitee"
+                }
+            ],
+            "footer": {
+                "donate": {
+                    "nickname": "super9du",
+                    "avatar": "static/profile.jpg",
+                    "message": "❤️❤️❤️",
+                    "text": "❤️感觉有帮助就支持一下吧❤️",
+                    "wxpay": "assets/weichat-pay-qr-code.png",
+                    "alipay": "assets/alipay-qr-code.png"
+                },
+                "copyright": true
+            }
+        }
+    }
+}
